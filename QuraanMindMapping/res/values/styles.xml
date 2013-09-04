@@ -1,20 +1,73 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+    <style name="AppTheme" parent="android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
     </style>
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="textViewTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue</item>
+        <!-- <item name="android:layout_width">fill_parent</item> -->
+        <!-- <item name="android:layout_height">wrap_content</item> -->
+        <!-- <item name="android:gravity">left</item> -->
+        <!-- <item name="android:textColor">#00FF00</item> -->
+        <!-- <item name="android:typeface">monospace</item> -->
+    </style>
+
+    <style name="textViewInfo" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="textViewSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="Button" parent="@android:style/TextAppearance.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <!-- <item name="android:textColor">@drawable/button_text_color__selector</item> -->
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!-- <item name="android:background">@drawable/button_main_selector</item> -->
+
+
+    <!-- <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton"> -->
+    <!-- <item name="android:button">@drawable/radiobutton_selector</item> -->
+    <!-- <item name="android:textSize">14sp</item> -->
+    <!-- <item name="android:gravity">start|center_vertical</item> -->
+    <!-- <item name="android:textColor">@color/blue</item> -->
+    <!-- </style> -->
+
+
+    <!-- <item name="android:textSize">18sp</item> -->
+    <!-- <item name="android:gravity">start|center_vertical</item> -->
+    <!-- <item name="android:textColor">@color/blue</item> -->
+    <style name="HelpTextStyle" parent="@style/textViewInfo">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="textViewSmallHelp" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <style name="HelpImageAligStyle">
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="edittextInfo" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">right|top</item>
+        <item name="android:textColor">@color/blue</item>
     </style>
 
 </resources>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 
 public class ParentActivity extends Activity implements OnClickListener {
 
@@ -11,23 +12,23 @@ public class ParentActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 	//	Language.setCurrentLocal(getApplicationContext());
-//		ImageButton back = (ImageButton) findViewById(R.id.back_btn);
-//		if (back != null)
-//			back.setOnClickListener(this);
-		// setContentView(R.layout.activity_parent);
+		ImageButton back = (ImageButton) findViewById(R.id.back_btn);
+		if (back != null)
+			back.setOnClickListener(this);
+		
 	}
 
 	@Override
 	public void onClick(View v) {
-//		int id = v.getId();
-//		switch (id) {
-//		case R.id.back_btn:
-//			finish();
-//			break;
-//
-//		default:
-//			break;
-//		}
+		int id = v.getId();
+		switch (id) {
+		case R.id.back_btn:
+			finish();
+			break;
+
+		default:
+			break;
+		}
 
 	}
 

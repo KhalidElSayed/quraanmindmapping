@@ -29,7 +29,11 @@
             android:name="com.hm.mindmap.SurahActivity"
             android:label="@string/title_activity_surah" >
         </activity>
-        <activity android:name="Intro" >
+        <activity android:name="com.hm.mindmap.Intro" >
+        </activity>
+        <activity
+            android:name="com.hm.mindmap.AboutAppActivity"
+            android:label="@string/title_activity_about_app" >
         </activity>
     </application>
 

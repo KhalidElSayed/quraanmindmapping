@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color name="blue">#004842</color>
+
+    <color name="blue">#004842</color>
+
     <string name="app_name">QuraanMindMapping</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_surah">SurahActivity</string>
+    <string name="title_activity_about_app">AboutAppActivity</string>
+    <string name="about">عن التطبيق</string>
+    <string name="aim">يهدف هذا التطبيق لايجاد طرق ابتكارية لتسهيل الحفظ وسيتم قريبا اضافة المزيد من الخصائص المساعدة على الحفظ  وبقية السور</string>
+    <string name="vote">التصويت للتطبيق حتى يمكننا الاستمرار</string>
+    <string name="useapp">أحسن طريقة للاستفادة من التطبيق</string>
+    <string name="share">شارك التطبيق مع اصدقاءك</string>
+    <string name="team">فريق العمل</string>
+    <string name="feedback">يهمنا سماع رأيك راسلنا على موقعنا</string>
 
 </resources>

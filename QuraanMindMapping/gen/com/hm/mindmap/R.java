@@ -31,7 +31,7 @@ public final class R {
     }
     public static final class id {
         public static final int ImageSwitcher=0x7f09000c;
-        public static final int action_settings=0x7f090010;
+        public static final int action_settings=0x7f090017;
         public static final int aim=0x7f090002;
         public static final int app_icon=0x7f090001;
         public static final int back_btn=0x7f090000;
@@ -39,12 +39,19 @@ public final class R {
         public static final int bullets_img2=0x7f09000f;
         public static final int bullets_l=0x7f09000b;
         public static final int cTextView1=0x7f090008;
+        public static final int email=0x7f090016;
+        public static final int facebook=0x7f090014;
         public static final int feedback=0x7f090007;
+        public static final int gmail=0x7f090015;
         public static final int header_title=0x7f09000a;
+        public static final int img=0x7f090010;
         public static final int listView1=0x7f090009;
+        public static final int nameEt=0x7f090011;
+        public static final int positionEt=0x7f090012;
         public static final int share=0x7f090005;
         public static final int start_btn=0x7f09000d;
         public static final int team=0x7f090006;
+        public static final int twitter=0x7f090013;
         public static final int useApp=0x7f090004;
         public static final int vote=0x7f090003;
     }

@@ -30,32 +30,37 @@ public final class R {
         public static final int on=0x7f020002;
     }
     public static final class id {
-        public static final int ImageSwitcher=0x7f09000a;
-        public static final int action_settings=0x7f09000e;
+        public static final int ImageSwitcher=0x7f09000c;
+        public static final int action_settings=0x7f090010;
         public static final int aim=0x7f090002;
         public static final int app_icon=0x7f090001;
         public static final int back_btn=0x7f090000;
-        public static final int bullets_img1=0x7f09000c;
-        public static final int bullets_img2=0x7f09000d;
-        public static final int bullets_l=0x7f090009;
+        public static final int bullets_img1=0x7f09000e;
+        public static final int bullets_img2=0x7f09000f;
+        public static final int bullets_l=0x7f09000b;
+        public static final int cTextView1=0x7f090008;
         public static final int feedback=0x7f090007;
-        public static final int header_title=0x7f090008;
+        public static final int header_title=0x7f09000a;
+        public static final int listView1=0x7f090009;
         public static final int share=0x7f090005;
-        public static final int start_btn=0x7f09000b;
+        public static final int start_btn=0x7f09000d;
         public static final int team=0x7f090006;
         public static final int useApp=0x7f090004;
         public static final int vote=0x7f090003;
     }
     public static final class layout {
         public static final int activity_about_app=0x7f030000;
-        public static final int activity_splash=0x7f030001;
-        public static final int activity_surah=0x7f030002;
-        public static final int intro=0x7f030003;
+        public static final int activity_about_team=0x7f030001;
+        public static final int activity_splash=0x7f030002;
+        public static final int activity_surah=0x7f030003;
+        public static final int intro=0x7f030004;
+        public static final int row_team=0x7f030005;
     }
     public static final class menu {
         public static final int about_app=0x7f080000;
-        public static final int splash=0x7f080001;
-        public static final int surah=0x7f080002;
+        public static final int about_team=0x7f080001;
+        public static final int splash=0x7f080002;
+        public static final int surah=0x7f080003;
     }
     public static final class string {
         public static final int about=0x7f060005;
@@ -67,6 +72,7 @@ public final class R {
         public static final int share=0x7f060009;
         public static final int team=0x7f06000a;
         public static final int title_activity_about_app=0x7f060004;
+        public static final int title_activity_about_team=0x7f06000c;
         public static final int title_activity_surah=0x7f060003;
         public static final int useapp=0x7f060008;
         public static final int vote=0x7f060007;

@@ -15,5 +15,6 @@
     <string name="share">شارك التطبيق مع اصدقاءك</string>
     <string name="team">فريق العمل</string>
     <string name="feedback">يهمنا سماع رأيك راسلنا على موقعنا</string>
+    <string name="title_activity_about_team">AboutTeamActivity</string>
 
 </resources>

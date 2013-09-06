@@ -137,43 +137,68 @@ containing a value of this type.
         public static final int button_hight=0x7f050002;
     }
     public static final class drawable {
-        public static final int btn_pause=0x7f020000;
-        public static final int btn_play=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int img_btn_pause=0x7f020003;
-        public static final int img_btn_pause_pressed=0x7f020004;
-        public static final int img_btn_play=0x7f020005;
-        public static final int img_btn_play_pressed=0x7f020006;
-        public static final int off=0x7f020007;
-        public static final int on=0x7f020008;
+        public static final int benifit_button=0x7f020000;
+        public static final int btn_pause=0x7f020001;
+        public static final int btn_play=0x7f020002;
+        public static final int custom_checkbox_design=0x7f020003;
+        public static final int general_off=0x7f020004;
+        public static final int general_on=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int img_btn_pause=0x7f020007;
+        public static final int img_btn_pause_pressed=0x7f020008;
+        public static final int img_btn_play=0x7f020009;
+        public static final int img_btn_play_pressed=0x7f02000a;
+        public static final int mind_map_button=0x7f02000b;
+        public static final int off=0x7f02000c;
+        public static final int on=0x7f02000d;
+        public static final int timeline_bar=0x7f02000e;
+        public static final int top_bar_empty=0x7f02000f;
+        public static final int whole_circle=0x7f020010;
+        public static final int whole_circle1=0x7f020011;
+        public static final int whole_circle2=0x7f020012;
+        public static final int whole_circle3=0x7f020013;
+        public static final int whole_circle5=0x7f020014;
+        public static final int whole_circle6=0x7f020015;
+        public static final int whole_circle7=0x7f020016;
+        public static final int whole_circle8=0x7f020017;
     }
     public static final class id {
-        public static final int ImageSwitcher=0x7f0a000f;
-        public static final int action_settings=0x7f0a001a;
+        public static final int ImageSwitcher=0x7f0a0015;
+        public static final int action_settings=0x7f0a0024;
         public static final int aim=0x7f0a0002;
         public static final int app_icon=0x7f0a0001;
         public static final int back_btn=0x7f0a0000;
-        public static final int btnPlay=0x7f0a000c;
-        public static final int bullets_img1=0x7f0a0011;
-        public static final int bullets_img2=0x7f0a0012;
-        public static final int bullets_l=0x7f0a000e;
+        public static final int btnPlay=0x7f0a0012;
+        public static final int bullets_img1=0x7f0a0017;
+        public static final int bullets_img2=0x7f0a0018;
+        public static final int bullets_l=0x7f0a0014;
         public static final int cTextView1=0x7f0a0008;
-        public static final int email=0x7f0a0016;
-        public static final int facebook=0x7f0a0018;
+        public static final int circle_img=0x7f0a000b;
+        public static final int done_ch=0x7f0a001b;
+        public static final int email=0x7f0a0020;
+        public static final int facebook=0x7f0a0022;
         public static final int feedback=0x7f0a0007;
-        public static final int gmail=0x7f0a0019;
-        public static final int header_title=0x7f0a000d;
-        public static final int img=0x7f0a0013;
+        public static final int from_txt=0x7f0a0019;
+        public static final int gmail=0x7f0a0023;
+        public static final int header_title=0x7f0a0013;
+        public static final int img=0x7f0a001d;
         public static final int listView1=0x7f0a0009;
-        public static final int nameEt=0x7f0a0014;
-        public static final int picker=0x7f0a000b;
-        public static final int player=0x7f0a000a;
-        public static final int positionEt=0x7f0a0015;
+        public static final int mindmap_btn=0x7f0a000d;
+        public static final int nameEt=0x7f0a001e;
+        public static final int part_name_txt=0x7f0a001c;
+        public static final int perc_txt=0x7f0a000c;
+        public static final int picker=0x7f0a0011;
+        public static final int player=0x7f0a0010;
+        public static final int positionEt=0x7f0a001f;
         public static final int share=0x7f0a0005;
-        public static final int start_btn=0x7f0a0010;
+        public static final int start_btn=0x7f0a0016;
+        public static final int surah_details_list=0x7f0a000f;
         public static final int team=0x7f0a0006;
-        public static final int twitter=0x7f0a0017;
+        public static final int title=0x7f0a000a;
+        public static final int to_txt=0x7f0a001a;
+        public static final int twitter=0x7f0a0021;
         public static final int useApp=0x7f0a0004;
+        public static final int virtue_btn=0x7f0a000e;
         public static final int vote=0x7f0a0003;
     }
     public static final class layout {
@@ -183,7 +208,8 @@ containing a value of this type.
         public static final int activity_surah=0x7f030003;
         public static final int branch_details=0x7f030004;
         public static final int intro=0x7f030005;
-        public static final int row_team=0x7f030006;
+        public static final int row_surah_parts=0x7f030006;
+        public static final int row_team=0x7f030007;
     }
     public static final class menu {
         public static final int about_app=0x7f090000;
@@ -201,12 +227,15 @@ containing a value of this type.
         public static final int app_name=0x7f070000;
         public static final int feedback=0x7f07000b;
         public static final int hello_world=0x7f070002;
+        public static final int mindmap=0x7f07000e;
         public static final int share=0x7f070009;
+        public static final int surah_name=0x7f07000d;
         public static final int team=0x7f07000a;
         public static final int title_activity_about_app=0x7f070004;
         public static final int title_activity_about_team=0x7f07000c;
         public static final int title_activity_surah=0x7f070003;
         public static final int useapp=0x7f070008;
+        public static final int virtue=0x7f07000f;
         public static final int vote=0x7f070007;
     }
     public static final class style {
@@ -292,7 +321,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:color
+          @attr name com.hm.mindmap:color
         */
         public static final int HoloCircleSeekBar_color = 8;
         /**
@@ -306,7 +335,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:end_angle
+          @attr name com.hm.mindmap:end_angle
         */
         public static final int HoloCircleSeekBar_end_angle = 5;
         /**
@@ -320,7 +349,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:init_position
+          @attr name com.hm.mindmap:init_position
         */
         public static final int HoloCircleSeekBar_init_position = 7;
         /**
@@ -334,7 +363,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:max
+          @attr name com.hm.mindmap:max
         */
         public static final int HoloCircleSeekBar_max = 2;
         /**
@@ -348,7 +377,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:pointer_color
+          @attr name com.hm.mindmap:pointer_color
         */
         public static final int HoloCircleSeekBar_pointer_color = 11;
         /**
@@ -362,7 +391,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:pointer_halo_color
+          @attr name com.hm.mindmap:pointer_halo_color
         */
         public static final int HoloCircleSeekBar_pointer_halo_color = 12;
         /**
@@ -376,7 +405,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:pointer_size
+          @attr name com.hm.mindmap:pointer_size
         */
         public static final int HoloCircleSeekBar_pointer_size = 1;
         /**
@@ -390,7 +419,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:show_text
+          @attr name com.hm.mindmap:show_text
         */
         public static final int HoloCircleSeekBar_show_text = 3;
         /**
@@ -404,7 +433,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:start_angle
+          @attr name com.hm.mindmap:start_angle
         */
         public static final int HoloCircleSeekBar_start_angle = 4;
         /**
@@ -418,7 +447,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:text_color
+          @attr name com.hm.mindmap:text_color
         */
         public static final int HoloCircleSeekBar_text_color = 13;
         /**
@@ -432,7 +461,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:text_size
+          @attr name com.hm.mindmap:text_size
         */
         public static final int HoloCircleSeekBar_text_size = 6;
         /**
@@ -446,7 +475,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:wheel_active_color
+          @attr name com.hm.mindmap:wheel_active_color
         */
         public static final int HoloCircleSeekBar_wheel_active_color = 9;
         /**
@@ -460,7 +489,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:wheel_size
+          @attr name com.hm.mindmap:wheel_size
         */
         public static final int HoloCircleSeekBar_wheel_size = 0;
         /**
@@ -474,7 +503,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:wheel_unactive_color
+          @attr name com.hm.mindmap:wheel_unactive_color
         */
         public static final int HoloCircleSeekBar_wheel_unactive_color = 10;
     };

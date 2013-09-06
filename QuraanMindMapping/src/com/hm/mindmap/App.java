@@ -15,7 +15,7 @@ public class App extends Application {
 	public static Typeface ButtonFace;
 	// String Roman_LOCATION_PATH = "fonts/DroidNaskh-Bold.ttf";
 	// String droid_LOCATION_PATH = "fonts/droidkufiregular_0.otf";
-	String Droid_LOCATION_PATH = "fonts/GS45_Arab_AndroidOS.ttf";
+	String Droid_LOCATION_PATH = "fonts/HelveticaNeueLTCom-MdCn.ttf";
 	//String Button_LOCATION_PATH = "fonts/AdobeArabic-Bold.otf";
 	public static Context context;	
 	public static int move = 0;

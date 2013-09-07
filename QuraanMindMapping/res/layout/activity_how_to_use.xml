@@ -16,17 +16,21 @@
     <ImageButton
         android:id="@+id/back_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        android:src="@drawable/close_button" />
 
     <c.CTextView
         android:id="@+id/title"
         style="@style/textViewTitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/back_btn"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:padding="5dp"
         android:layout_toRightOf="@+id/back_btn"
+        android:padding="5dp"
         android:text="@string/how_to_use_tt" />
 
     <ScrollView
@@ -42,7 +46,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/how_to_use" />
-
     </ScrollView>
 
 </RelativeLayout>

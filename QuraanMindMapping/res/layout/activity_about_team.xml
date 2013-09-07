@@ -7,23 +7,28 @@
     tools:context=".AboutTeamActivity" >
 
     <ImageView
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/title"
         android:layout_alignParentTop="true"
         android:background="@drawable/top_bar_empty" />
 
     <ImageButton
         android:id="@+id/back_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_alignBottom="@+id/title"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close_button" />
 
     <c.CTextView
-        android:id="@+id/cTextView1"
+        android:id="@+id/title"
         style="@style/textViewTitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/back_btn"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/header"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/back_btn"
         android:text="@string/team" />

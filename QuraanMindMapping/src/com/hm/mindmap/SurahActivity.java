@@ -44,7 +44,7 @@ public class SurahActivity extends ParentActivity {
 	}
 
 	private CharSequence getPercetage() {
-		Double d=(double) (totalparts*100/parts.length);
+		Double d=(double) (totalparts*100/(parts.length-1));
 		return Math.round(d)+" %";
 	}
 

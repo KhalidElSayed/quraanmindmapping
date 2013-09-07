@@ -44,9 +44,9 @@ public class SurahDetailsAdapter extends BaseAdapter {
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 
-		final SurahParts surahParts;
+		final SurahParts surahParts= data.get(position);
 		ViewHolder holder = null;
-		surahParts = data.get(position);
+		
 		if (convertView == null) {
 			convertView = inflater.inflate(R.layout.row_surah_parts, null);
 			holder = new ViewHolder();
@@ -58,22 +58,7 @@ public class SurahDetailsAdapter extends BaseAdapter {
 			holder.to_txt = (TextView) convertView.findViewById(R.id.to_txt);
 			holder.from_txt = (TextView) convertView
 					.findViewById(R.id.from_txt);
-			holder.done_ch.setOnClickListener(new View.OnClickListener() {
-				int p = surahParts.part_num;
-
-				public void onClick(View v) {
-					CheckBox cb = (CheckBox) v;
-
-					if (cb.isChecked()) {
-
-						activity.addToCounter(p);
-						surahParts.done = true;
-					} else {
-						activity.removeFromCounter(p);
-						surahParts.done = false;
-					}
-				}
-			});
+			
 		}
 		holder = (ViewHolder) convertView.getTag();
 		holder.done_ch.setButtonDrawable(surahParts.level);
@@ -81,7 +66,22 @@ public class SurahDetailsAdapter extends BaseAdapter {
 		holder.part_name_txt.setText(surahParts.nameOfPart);
 		holder.from_txt.setText(surahParts.fromAyah);
 		holder.to_txt.setText(surahParts.toAyah);
+		holder.done_ch.setOnClickListener(new View.OnClickListener() {
+			int p = surahParts.part_num;
 
+			public void onClick(View v) {
+				CheckBox cb = (CheckBox) v;
+
+				if (cb.isChecked()) {
+
+					activity.addToCounter(p);
+					surahParts.done = true;
+				} else {
+					activity.removeFromCounter(p);
+					surahParts.done = false;
+				}
+			}
+		});
 		return convertView;
 	}
 

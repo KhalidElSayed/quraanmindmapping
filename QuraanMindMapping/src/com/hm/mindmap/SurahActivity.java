@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import objects.SurahParts;
 import adapter.SurahDetailsAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -16,7 +18,7 @@ public class SurahActivity extends ParentActivity {
 	private ImageView circleImg;
 	private CTextView percTxt;
 	private ImageButton mindmapBtn;
-	private ImageButton virtueBtn;
+	private ImageButton virtueBtn, aboutus_btn;
 	private ListView surahDetailsList;
 	int totalparts = 0;
 	StoreData data = new StoreData();
@@ -34,18 +36,23 @@ public class SurahActivity extends ParentActivity {
 		surahDetailsList.setAdapter(new SurahDetailsAdapter(this,
 				new ArrayList<SurahParts>()));
 		for (int i = 0; i < parts.length; i++) {
-			if(isDone(i))
+			if (isDone(i))
 				totalparts++;
-			
+
 		}
+		surahDetailsList
+				.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+					@Override
+					public void onItemClick(AdapterView<?> arg0, View arg1,
+							int arg2, long arg3) {
+						// TODO Auto-generated method stub
+
+					}
+				});
 		circleImg.setImageResource(parts[totalparts]);
 
 		percTxt.setText(getPercetage());
-	}
-
-	private CharSequence getPercetage() {
-		Double d=(double) (totalparts*100/(parts.length-1));
-		return Math.round(d)+" %";
 	}
 
 	private void findViews() {
@@ -53,10 +60,17 @@ public class SurahActivity extends ParentActivity {
 		percTxt = (CTextView) findViewById(R.id.perc_txt);
 		mindmapBtn = (ImageButton) findViewById(R.id.mindmap_btn);
 		virtueBtn = (ImageButton) findViewById(R.id.virtue_btn);
+		aboutus_btn = (ImageButton) findViewById(R.id.aboutus_btn);
 		surahDetailsList = (ListView) findViewById(R.id.surah_details_list);
 
 		mindmapBtn.setOnClickListener(this);
 		virtueBtn.setOnClickListener(this);
+		aboutus_btn.setOnClickListener(this);
+	}
+
+	private CharSequence getPercetage() {
+		Double d = (double) (totalparts * 100 / (parts.length - 1));
+		return Math.round(d) + " %";
 	}
 
 	@Override
@@ -65,19 +79,24 @@ public class SurahActivity extends ParentActivity {
 			// Handle clicks for mindmapBtn
 		} else if (v == virtueBtn) {
 			// Handle clicks for virtueBtn
+		} else if (v == aboutus_btn) {
+			startActivity(new Intent(getApplicationContext(),
+					AboutAppActivity.class));
 		} else {
 			super.onClick(v);
 		}
 	}
 
 	public void addToCounter(int i) {
-		totalparts++;
+		if (totalparts < parts.length - 1)
+			totalparts++;
 		circleImg.setImageResource(parts[totalparts]);
 		percTxt.setText(getPercetage());
 		updateParts(i, true);
 	}
 
 	public void removeFromCounter(int i) {
+		if (totalparts > 0)
 		totalparts--;
 		circleImg.setImageResource(parts[totalparts]);
 		percTxt.setText(getPercetage());
@@ -155,5 +174,4 @@ public class SurahActivity extends ParentActivity {
 
 	}
 
-	
 }

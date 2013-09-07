@@ -1,104 +1,132 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@style/ActvityBackGround"
+    android:background="@drawable/about_us_bg"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     tools:context=".AboutAppActivity" >
 
-    <RelativeLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bar_empty" />
 
-        <ImageButton
-            android:id="@+id/back_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        <c.CTextView
-            style="@style/textViewTitle"
-            android:layout_alignParentTop="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/back_btn"
-            android:layout_toRightOf="@+id/back_btn"
-            android:text="@string/about" />
+    <c.CTextView
+        style="@style/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/back_btn"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="@string/about" />
 
-        <ImageView
-            android:id="@+id/app_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/aim"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/back_btn"
-            android:src="@drawable/ic_launcher" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn" >
 
-        <c.CTextView
-            android:id="@+id/aim"
-            style="@style/textViewInfo"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/back_btn"
-            android:layout_toLeftOf="@+id/app_icon"
-            android:text="@string/aim" />
+            android:orientation="vertical" >
 
-        <c.CButton
-            android:id="@+id/vote"
-            style="@style/Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/aim"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/on"
-            android:gravity="right|center_vertical"
-            android:text="@string/vote" />
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/aim"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_launcher" />
 
-        <c.CButton
-            android:id="@+id/useApp"
-            style="@style/Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/vote"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/on"
-            android:gravity="right|center_vertical"
-            android:text="@string/useapp" />
+            <c.CTextView
+                android:id="@+id/aim"
+                style="@style/textViewInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toLeftOf="@+id/app_icon"
+                android:text="@string/aim" />
 
-        <c.CButton
-            android:id="@+id/share"
-            style="@style/Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/useApp"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/on"
-            android:gravity="right|center_vertical"
-            android:text="@string/share" />
+            <c.CButton
+                android:id="@+id/vote"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aim"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_aboutapp_selector"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:text="@string/vote" />
 
-        <c.CButton
-            android:id="@+id/team"
-            style="@style/Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/share"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/on"
-            android:gravity="right|center_vertical"
-            android:text="@string/team" />
+            <c.CButton
+                android:id="@+id/useApp"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vote"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_aboutapp_selector"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:text="@string/useapp" />
 
-        <c.CButton
-            android:id="@+id/feedback"
-            style="@style/Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/team"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/on"
-            android:gravity="right|center_vertical"
-            android:text="@string/feedback" />
-    </RelativeLayout>
+            <c.CButton
+                android:id="@+id/share"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/useApp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_aboutapp_selector"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:text="@string/share" />
 
-</ScrollView>
+            <c.CButton
+                android:id="@+id/team"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_aboutapp_selector"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:text="@string/team" />
+
+            <c.CButton
+                android:id="@+id/feedback"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/team"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_aboutapp_selector"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:text="@string/feedback" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

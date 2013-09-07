@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/pic_holder" />
 
     <c.CTextView
         android:id="@+id/nameEt"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/nameEt"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/tw_icon" />
 
     <ImageView
         android:id="@+id/facebook"
@@ -46,7 +46,7 @@
         android:layout_alignBottom="@+id/twitter"
         android:layout_alignTop="@+id/twitter"
         android:layout_toLeftOf="@+id/twitter"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/fb_icon" />
 
     <ImageView
         android:id="@+id/gmail"
@@ -64,6 +64,6 @@
         android:layout_alignBottom="@+id/twitter"
         android:layout_alignTop="@+id/twitter"
         android:layout_toLeftOf="@+id/gmail"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/mail_icon" />
 
 </RelativeLayout>

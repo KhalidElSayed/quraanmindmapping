@@ -50,6 +50,10 @@
             android:name="com.hm.mindmap.AboutTeamActivity"
             android:label="@string/title_activity_about_team" >
         </activity>
+        <activity
+            android:name="com.hm.mindmap.HowToUseActivity"
+            android:label="@string/title_activity_how_to_use" >
+        </activity>
     </application>
 
 </manifest>

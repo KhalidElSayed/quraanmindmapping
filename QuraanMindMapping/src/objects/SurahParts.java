@@ -8,4 +8,5 @@ public String toAyah="10";
 public String nameOfPart="Name ";
 public boolean done;
 public int level=R.drawable.custom_checkbox_design;
+public int part_num=0;
 }

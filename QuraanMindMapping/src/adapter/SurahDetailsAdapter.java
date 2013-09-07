@@ -42,7 +42,7 @@ public class SurahDetailsAdapter extends BaseAdapter {
 		return position;
 	}
 
-	public View getView(final int position, View convertView, ViewGroup parent) {
+	public View getView(int position, View convertView, ViewGroup parent) {
 
 		final SurahParts surahParts;
 		ViewHolder holder = null;
@@ -59,14 +59,18 @@ public class SurahDetailsAdapter extends BaseAdapter {
 			holder.from_txt = (TextView) convertView
 					.findViewById(R.id.from_txt);
 			holder.done_ch.setOnClickListener(new View.OnClickListener() {
+				int p = surahParts.part_num;
+
 				public void onClick(View v) {
 					CheckBox cb = (CheckBox) v;
+
 					if (cb.isChecked()) {
-						activity.addToCounter(position);
-						surahParts.done=true;
+
+						activity.addToCounter(p);
+						surahParts.done = true;
 					} else {
-						activity.removeFromCounter(position);
-						surahParts.done=false;
+						activity.removeFromCounter(p);
+						surahParts.done = false;
 					}
 				}
 			});
@@ -93,11 +97,12 @@ public class SurahDetailsAdapter extends BaseAdapter {
 			SurahParts.fromAyah = from[i];
 			SurahParts.toAyah = to[i];
 			SurahParts.nameOfPart = part_name[i];
+			SurahParts.part_num = i;
 			if (i == 0)
 				SurahParts.level = R.drawable.checkbox_paradise_design;
 			if (i == 1)
 				SurahParts.level = R.drawable.checkbox_hell_design;
-			
+
 			if (i == 3)
 				SurahParts.level = R.drawable.checkbox_story_design;
 			data.add(SurahParts);

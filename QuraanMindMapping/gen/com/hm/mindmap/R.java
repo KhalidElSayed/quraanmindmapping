@@ -9,9 +9,121 @@ package com.hm.mindmap;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color=0x7f010008;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int end_angle=0x7f010005;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int init_position=0x7f010007;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max=0x7f010002;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pointer_color=0x7f01000b;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pointer_halo_color=0x7f01000c;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pointer_size=0x7f010001;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int show_text=0x7f010003;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int start_angle=0x7f010004;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int text_color=0x7f01000d;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int text_size=0x7f010006;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wheel_active_color=0x7f010009;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wheel_size=0x7f010000;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wheel_unactive_color=0x7f01000a;
     }
     public static final class color {
-        public static final int blue=0x7f050000;
+        public static final int blue=0x7f060000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -20,75 +132,88 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
-        public static final int button_hight=0x7f040002;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+        public static final int button_hight=0x7f050002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int off=0x7f020001;
-        public static final int on=0x7f020002;
+        public static final int btn_pause=0x7f020000;
+        public static final int btn_play=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int img_btn_pause=0x7f020003;
+        public static final int img_btn_pause_pressed=0x7f020004;
+        public static final int img_btn_play=0x7f020005;
+        public static final int img_btn_play_pressed=0x7f020006;
+        public static final int off=0x7f020007;
+        public static final int on=0x7f020008;
     }
     public static final class id {
-        public static final int ImageSwitcher=0x7f09000c;
-        public static final int action_settings=0x7f090017;
-        public static final int aim=0x7f090002;
-        public static final int app_icon=0x7f090001;
-        public static final int back_btn=0x7f090000;
-        public static final int bullets_img1=0x7f09000e;
-        public static final int bullets_img2=0x7f09000f;
-        public static final int bullets_l=0x7f09000b;
-        public static final int cTextView1=0x7f090008;
-        public static final int email=0x7f090016;
-        public static final int facebook=0x7f090014;
-        public static final int feedback=0x7f090007;
-        public static final int gmail=0x7f090015;
-        public static final int header_title=0x7f09000a;
-        public static final int img=0x7f090010;
-        public static final int listView1=0x7f090009;
-        public static final int nameEt=0x7f090011;
-        public static final int positionEt=0x7f090012;
-        public static final int share=0x7f090005;
-        public static final int start_btn=0x7f09000d;
-        public static final int team=0x7f090006;
-        public static final int twitter=0x7f090013;
-        public static final int useApp=0x7f090004;
-        public static final int vote=0x7f090003;
+        public static final int ImageSwitcher=0x7f0a000f;
+        public static final int action_settings=0x7f0a001a;
+        public static final int aim=0x7f0a0002;
+        public static final int app_icon=0x7f0a0001;
+        public static final int back_btn=0x7f0a0000;
+        public static final int btnPlay=0x7f0a000c;
+        public static final int bullets_img1=0x7f0a0011;
+        public static final int bullets_img2=0x7f0a0012;
+        public static final int bullets_l=0x7f0a000e;
+        public static final int cTextView1=0x7f0a0008;
+        public static final int email=0x7f0a0016;
+        public static final int facebook=0x7f0a0018;
+        public static final int feedback=0x7f0a0007;
+        public static final int gmail=0x7f0a0019;
+        public static final int header_title=0x7f0a000d;
+        public static final int img=0x7f0a0013;
+        public static final int listView1=0x7f0a0009;
+        public static final int nameEt=0x7f0a0014;
+        public static final int picker=0x7f0a000b;
+        public static final int player=0x7f0a000a;
+        public static final int positionEt=0x7f0a0015;
+        public static final int share=0x7f0a0005;
+        public static final int start_btn=0x7f0a0010;
+        public static final int team=0x7f0a0006;
+        public static final int twitter=0x7f0a0017;
+        public static final int useApp=0x7f0a0004;
+        public static final int vote=0x7f0a0003;
     }
     public static final class layout {
         public static final int activity_about_app=0x7f030000;
         public static final int activity_about_team=0x7f030001;
         public static final int activity_splash=0x7f030002;
         public static final int activity_surah=0x7f030003;
-        public static final int intro=0x7f030004;
-        public static final int row_team=0x7f030005;
+        public static final int branch_details=0x7f030004;
+        public static final int intro=0x7f030005;
+        public static final int row_team=0x7f030006;
     }
     public static final class menu {
-        public static final int about_app=0x7f080000;
-        public static final int about_team=0x7f080001;
-        public static final int splash=0x7f080002;
-        public static final int surah=0x7f080003;
+        public static final int about_app=0x7f090000;
+        public static final int about_team=0x7f090001;
+        public static final int splash=0x7f090002;
+        public static final int surah=0x7f090003;
+    }
+    public static final class raw {
+        public static final int su18=0x7f040000;
     }
     public static final class string {
-        public static final int about=0x7f060005;
-        public static final int action_settings=0x7f060001;
-        public static final int aim=0x7f060006;
-        public static final int app_name=0x7f060000;
-        public static final int feedback=0x7f06000b;
-        public static final int hello_world=0x7f060002;
-        public static final int share=0x7f060009;
-        public static final int team=0x7f06000a;
-        public static final int title_activity_about_app=0x7f060004;
-        public static final int title_activity_about_team=0x7f06000c;
-        public static final int title_activity_surah=0x7f060003;
-        public static final int useapp=0x7f060008;
-        public static final int vote=0x7f060007;
+        public static final int about=0x7f070005;
+        public static final int action_settings=0x7f070001;
+        public static final int aim=0x7f070006;
+        public static final int app_name=0x7f070000;
+        public static final int feedback=0x7f07000b;
+        public static final int hello_world=0x7f070002;
+        public static final int share=0x7f070009;
+        public static final int team=0x7f07000a;
+        public static final int title_activity_about_app=0x7f070004;
+        public static final int title_activity_about_team=0x7f07000c;
+        public static final int title_activity_surah=0x7f070003;
+        public static final int useapp=0x7f070008;
+        public static final int vote=0x7f070007;
     }
     public static final class style {
-        public static final int ActvityBackGround=0x7f070001;
-        public static final int AppTheme=0x7f070000;
-        public static final int Button=0x7f070005;
-        public static final int HelpImageAligStyle=0x7f070008;
+        public static final int ActvityBackGround=0x7f080001;
+        public static final int AppTheme=0x7f080000;
+        public static final int Button=0x7f080005;
+        public static final int HelpImageAligStyle=0x7f080008;
         /**  <item name="android:background">@drawable/button_main_selector</item> 
  <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton"> 
  <item name="android:button">@drawable/radiobutton_selector</item> 
@@ -100,17 +225,257 @@ public final class R {
  <item name="android:gravity">start|center_vertical</item> 
  <item name="android:textColor">@color/blue</item> 
          */
-        public static final int HelpTextStyle=0x7f070006;
-        public static final int edittextInfo=0x7f070009;
-        public static final int textViewInfo=0x7f070003;
-        public static final int textViewSmall=0x7f070004;
-        public static final int textViewSmallHelp=0x7f070007;
+        public static final int HelpTextStyle=0x7f080006;
+        public static final int edittextInfo=0x7f080009;
+        public static final int textViewInfo=0x7f080003;
+        public static final int textViewSmall=0x7f080004;
+        public static final int textViewSmallHelp=0x7f080007;
         /**  <item name="android:layout_width">fill_parent</item> 
  <item name="android:layout_height">wrap_content</item> 
  <item name="android:gravity">left</item> 
  <item name="android:textColor">#00FF00</item> 
  <item name="android:typeface">monospace</item> 
          */
-        public static final int textViewTitle=0x7f070002;
+        public static final int textViewTitle=0x7f080002;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a HoloCircleSeekBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_color com.hm.mindmap:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_end_angle com.hm.mindmap:end_angle}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_init_position com.hm.mindmap:init_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_max com.hm.mindmap:max}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_pointer_color com.hm.mindmap:pointer_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_pointer_halo_color com.hm.mindmap:pointer_halo_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_pointer_size com.hm.mindmap:pointer_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_show_text com.hm.mindmap:show_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_start_angle com.hm.mindmap:start_angle}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_text_color com.hm.mindmap:text_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_text_size com.hm.mindmap:text_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_wheel_active_color com.hm.mindmap:wheel_active_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_wheel_size com.hm.mindmap:wheel_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_wheel_unactive_color com.hm.mindmap:wheel_unactive_color}</code></td><td></td></tr>
+           </table>
+           @see #HoloCircleSeekBar_color
+           @see #HoloCircleSeekBar_end_angle
+           @see #HoloCircleSeekBar_init_position
+           @see #HoloCircleSeekBar_max
+           @see #HoloCircleSeekBar_pointer_color
+           @see #HoloCircleSeekBar_pointer_halo_color
+           @see #HoloCircleSeekBar_pointer_size
+           @see #HoloCircleSeekBar_show_text
+           @see #HoloCircleSeekBar_start_angle
+           @see #HoloCircleSeekBar_text_color
+           @see #HoloCircleSeekBar_text_size
+           @see #HoloCircleSeekBar_wheel_active_color
+           @see #HoloCircleSeekBar_wheel_size
+           @see #HoloCircleSeekBar_wheel_unactive_color
+         */
+        public static final int[] HoloCircleSeekBar = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:color
+        */
+        public static final int HoloCircleSeekBar_color = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#end_angle}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:end_angle
+        */
+        public static final int HoloCircleSeekBar_end_angle = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#init_position}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:init_position
+        */
+        public static final int HoloCircleSeekBar_init_position = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#max}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:max
+        */
+        public static final int HoloCircleSeekBar_max = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#pointer_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:pointer_color
+        */
+        public static final int HoloCircleSeekBar_pointer_color = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#pointer_halo_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:pointer_halo_color
+        */
+        public static final int HoloCircleSeekBar_pointer_halo_color = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#pointer_size}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:pointer_size
+        */
+        public static final int HoloCircleSeekBar_pointer_size = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#show_text}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:show_text
+        */
+        public static final int HoloCircleSeekBar_show_text = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#start_angle}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:start_angle
+        */
+        public static final int HoloCircleSeekBar_start_angle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#text_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:text_color
+        */
+        public static final int HoloCircleSeekBar_text_color = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#text_size}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:text_size
+        */
+        public static final int HoloCircleSeekBar_text_size = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#wheel_active_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:wheel_active_color
+        */
+        public static final int HoloCircleSeekBar_wheel_active_color = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#wheel_size}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:wheel_size
+        */
+        public static final int HoloCircleSeekBar_wheel_size = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.hm.mindmap.R.attr#wheel_unactive_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:wheel_unactive_color
+        */
+        public static final int HoloCircleSeekBar_wheel_unactive_color = 10;
+    };
 }

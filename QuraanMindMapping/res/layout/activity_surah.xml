@@ -79,7 +79,7 @@
         android:text="@string/virtue" />
 
     <ListView
-        android:background="@android:color/darker_gray"
+        android:background="#dddddd"
         android:id="@+id/surah_details_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

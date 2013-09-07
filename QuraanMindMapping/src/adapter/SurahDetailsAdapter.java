@@ -42,9 +42,9 @@ public class SurahDetailsAdapter extends BaseAdapter {
 		return position;
 	}
 
-	public View getView(int position, View convertView, ViewGroup parent) {
+	public View getView(final int position, View convertView, ViewGroup parent) {
 
-		SurahParts surahParts;
+		final SurahParts surahParts;
 		ViewHolder holder = null;
 		surahParts = data.get(position);
 		if (convertView == null) {
@@ -53,21 +53,26 @@ public class SurahDetailsAdapter extends BaseAdapter {
 
 			convertView.setTag(holder);
 			holder.done_ch = (CheckBox) convertView.findViewById(R.id.done_ch);
-			holder.part_name_txt=(TextView) convertView.findViewById(R.id.part_name_txt);
-			holder.to_txt=(TextView) convertView.findViewById(R.id.to_txt);
-			holder.from_txt=(TextView) convertView.findViewById(R.id.from_txt);
+			holder.part_name_txt = (TextView) convertView
+					.findViewById(R.id.part_name_txt);
+			holder.to_txt = (TextView) convertView.findViewById(R.id.to_txt);
+			holder.from_txt = (TextView) convertView
+					.findViewById(R.id.from_txt);
 			holder.done_ch.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View v) {
 					CheckBox cb = (CheckBox) v;
 					if (cb.isChecked()) {
-						activity.addToCounter();
+						activity.addToCounter(position);
+						surahParts.done=true;
 					} else {
-						activity.removeFromCounter();
+						activity.removeFromCounter(position);
+						surahParts.done=false;
 					}
 				}
 			});
 		}
 		holder = (ViewHolder) convertView.getTag();
+		holder.done_ch.setButtonDrawable(surahParts.level);
 		holder.done_ch.setChecked(surahParts.done);
 		holder.part_name_txt.setText(surahParts.nameOfPart);
 		holder.from_txt.setText(surahParts.fromAyah);
@@ -84,10 +89,17 @@ public class SurahDetailsAdapter extends BaseAdapter {
 
 		for (int i = 0; i < part_name.length; i++) {
 			SurahParts SurahParts = new SurahParts();
-			SurahParts.done = false;
+			SurahParts.done = activity.isDone(i);
 			SurahParts.fromAyah = from[i];
 			SurahParts.toAyah = to[i];
 			SurahParts.nameOfPart = part_name[i];
+			if (i == 0)
+				SurahParts.level = R.drawable.checkbox_paradise_design;
+			if (i == 1)
+				SurahParts.level = R.drawable.checkbox_hell_design;
+			
+			if (i == 3)
+				SurahParts.level = R.drawable.checkbox_story_design;
 			data.add(SurahParts);
 		}
 

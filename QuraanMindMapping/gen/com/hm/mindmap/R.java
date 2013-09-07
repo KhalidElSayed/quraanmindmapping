@@ -8,6 +8,11 @@
 package com.hm.mindmap;
 
 public final class R {
+    public static final class array {
+        public static final int from=0x7f080000;
+        public static final int part_name=0x7f080002;
+        public static final int to=0x7f080001;
+    }
     public static final class attr {
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -137,69 +142,73 @@ containing a value of this type.
         public static final int button_hight=0x7f050002;
     }
     public static final class drawable {
-        public static final int benifit_button=0x7f020000;
-        public static final int btn_pause=0x7f020001;
-        public static final int btn_play=0x7f020002;
-        public static final int custom_checkbox_design=0x7f020003;
-        public static final int general_off=0x7f020004;
-        public static final int general_on=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int img_btn_pause=0x7f020007;
-        public static final int img_btn_pause_pressed=0x7f020008;
-        public static final int img_btn_play=0x7f020009;
-        public static final int img_btn_play_pressed=0x7f02000a;
-        public static final int mind_map_button=0x7f02000b;
-        public static final int off=0x7f02000c;
-        public static final int on=0x7f02000d;
-        public static final int timeline_bar=0x7f02000e;
-        public static final int top_bar_empty=0x7f02000f;
-        public static final int whole_circle=0x7f020010;
-        public static final int whole_circle1=0x7f020011;
-        public static final int whole_circle2=0x7f020012;
-        public static final int whole_circle3=0x7f020013;
-        public static final int whole_circle5=0x7f020014;
-        public static final int whole_circle6=0x7f020015;
-        public static final int whole_circle7=0x7f020016;
-        public static final int whole_circle8=0x7f020017;
+        public static final int about_pressed=0x7f020000;
+        public static final int about_unpressed=0x7f020001;
+        public static final int benifit_button=0x7f020002;
+        public static final int btn_pause=0x7f020003;
+        public static final int btn_play=0x7f020004;
+        public static final int button_aboutus_selector=0x7f020005;
+        public static final int custom_checkbox_design=0x7f020006;
+        public static final int general_off=0x7f020007;
+        public static final int general_on=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int img_btn_pause=0x7f02000a;
+        public static final int img_btn_pause_pressed=0x7f02000b;
+        public static final int img_btn_play=0x7f02000c;
+        public static final int img_btn_play_pressed=0x7f02000d;
+        public static final int mind_map_button=0x7f02000e;
+        public static final int off=0x7f02000f;
+        public static final int on=0x7f020010;
+        public static final int timeline_bar=0x7f020011;
+        public static final int top_bar_empty=0x7f020012;
+        public static final int whole_circle=0x7f020013;
+        public static final int whole_circle1=0x7f020014;
+        public static final int whole_circle2=0x7f020015;
+        public static final int whole_circle3=0x7f020016;
+        public static final int whole_circle5=0x7f020017;
+        public static final int whole_circle6=0x7f020018;
+        public static final int whole_circle7=0x7f020019;
+        public static final int whole_circle8=0x7f02001a;
     }
     public static final class id {
-        public static final int ImageSwitcher=0x7f0a0015;
-        public static final int action_settings=0x7f0a0024;
-        public static final int aim=0x7f0a0002;
-        public static final int app_icon=0x7f0a0001;
-        public static final int back_btn=0x7f0a0000;
-        public static final int btnPlay=0x7f0a0012;
-        public static final int bullets_img1=0x7f0a0017;
-        public static final int bullets_img2=0x7f0a0018;
-        public static final int bullets_l=0x7f0a0014;
-        public static final int cTextView1=0x7f0a0008;
-        public static final int circle_img=0x7f0a000b;
-        public static final int done_ch=0x7f0a001b;
-        public static final int email=0x7f0a0020;
-        public static final int facebook=0x7f0a0022;
-        public static final int feedback=0x7f0a0007;
-        public static final int from_txt=0x7f0a0019;
-        public static final int gmail=0x7f0a0023;
-        public static final int header_title=0x7f0a0013;
-        public static final int img=0x7f0a001d;
-        public static final int listView1=0x7f0a0009;
-        public static final int mindmap_btn=0x7f0a000d;
-        public static final int nameEt=0x7f0a001e;
-        public static final int part_name_txt=0x7f0a001c;
-        public static final int perc_txt=0x7f0a000c;
-        public static final int picker=0x7f0a0011;
-        public static final int player=0x7f0a0010;
-        public static final int positionEt=0x7f0a001f;
-        public static final int share=0x7f0a0005;
-        public static final int start_btn=0x7f0a0016;
-        public static final int surah_details_list=0x7f0a000f;
-        public static final int team=0x7f0a0006;
-        public static final int title=0x7f0a000a;
-        public static final int to_txt=0x7f0a001a;
-        public static final int twitter=0x7f0a0021;
-        public static final int useApp=0x7f0a0004;
-        public static final int virtue_btn=0x7f0a000e;
-        public static final int vote=0x7f0a0003;
+        public static final int ImageSwitcher=0x7f0b0016;
+        public static final int aboutus_btn=0x7f0b000b;
+        public static final int action_settings=0x7f0b0025;
+        public static final int aim=0x7f0b0002;
+        public static final int app_icon=0x7f0b0001;
+        public static final int back_btn=0x7f0b0000;
+        public static final int btnPlay=0x7f0b0013;
+        public static final int bullets_img1=0x7f0b0018;
+        public static final int bullets_img2=0x7f0b0019;
+        public static final int bullets_l=0x7f0b0015;
+        public static final int cTextView1=0x7f0b0008;
+        public static final int circle_img=0x7f0b000c;
+        public static final int done_ch=0x7f0b001c;
+        public static final int email=0x7f0b0021;
+        public static final int facebook=0x7f0b0023;
+        public static final int feedback=0x7f0b0007;
+        public static final int from_txt=0x7f0b001a;
+        public static final int gmail=0x7f0b0024;
+        public static final int header_title=0x7f0b0014;
+        public static final int img=0x7f0b001e;
+        public static final int listView1=0x7f0b0009;
+        public static final int mindmap_btn=0x7f0b000e;
+        public static final int nameEt=0x7f0b001f;
+        public static final int part_name_txt=0x7f0b001d;
+        public static final int perc_txt=0x7f0b000d;
+        public static final int picker=0x7f0b0012;
+        public static final int player=0x7f0b0011;
+        public static final int positionEt=0x7f0b0020;
+        public static final int share=0x7f0b0005;
+        public static final int start_btn=0x7f0b0017;
+        public static final int surah_details_list=0x7f0b0010;
+        public static final int team=0x7f0b0006;
+        public static final int title=0x7f0b000a;
+        public static final int to_txt=0x7f0b001b;
+        public static final int twitter=0x7f0b0022;
+        public static final int useApp=0x7f0b0004;
+        public static final int virtue_btn=0x7f0b000f;
+        public static final int vote=0x7f0b0003;
     }
     public static final class layout {
         public static final int activity_about_app=0x7f030000;
@@ -212,10 +221,10 @@ containing a value of this type.
         public static final int row_team=0x7f030007;
     }
     public static final class menu {
-        public static final int about_app=0x7f090000;
-        public static final int about_team=0x7f090001;
-        public static final int splash=0x7f090002;
-        public static final int surah=0x7f090003;
+        public static final int about_app=0x7f0a0000;
+        public static final int about_team=0x7f0a0001;
+        public static final int splash=0x7f0a0002;
+        public static final int surah=0x7f0a0003;
     }
     public static final class raw {
         public static final int su18=0x7f040000;
@@ -239,10 +248,10 @@ containing a value of this type.
         public static final int vote=0x7f070007;
     }
     public static final class style {
-        public static final int ActvityBackGround=0x7f080001;
-        public static final int AppTheme=0x7f080000;
-        public static final int Button=0x7f080005;
-        public static final int HelpImageAligStyle=0x7f080008;
+        public static final int ActvityBackGround=0x7f090001;
+        public static final int AppTheme=0x7f090000;
+        public static final int Button=0x7f090005;
+        public static final int HelpImageAligStyle=0x7f090008;
         /**  <item name="android:background">@drawable/button_main_selector</item> 
  <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton"> 
  <item name="android:button">@drawable/radiobutton_selector</item> 
@@ -254,18 +263,18 @@ containing a value of this type.
  <item name="android:gravity">start|center_vertical</item> 
  <item name="android:textColor">@color/blue</item> 
          */
-        public static final int HelpTextStyle=0x7f080006;
-        public static final int edittextInfo=0x7f080009;
-        public static final int textViewInfo=0x7f080003;
-        public static final int textViewSmall=0x7f080004;
-        public static final int textViewSmallHelp=0x7f080007;
+        public static final int HelpTextStyle=0x7f090006;
+        public static final int edittextInfo=0x7f090009;
+        public static final int textViewInfo=0x7f090003;
+        public static final int textViewSmall=0x7f090004;
+        public static final int textViewSmallHelp=0x7f090007;
         /**  <item name="android:layout_width">fill_parent</item> 
  <item name="android:layout_height">wrap_content</item> 
  <item name="android:gravity">left</item> 
  <item name="android:textColor">#00FF00</item> 
  <item name="android:typeface">monospace</item> 
          */
-        public static final int textViewTitle=0x7f080002;
+        public static final int textViewTitle=0x7f090002;
     }
     public static final class styleable {
         /** Attributes that can be used with a HoloCircleSeekBar.

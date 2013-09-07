@@ -12,6 +12,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:gravity="center"
+        android:minEms="2"
         android:text="0" />
 
     <c.CTextView
@@ -22,7 +23,7 @@
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/from_txt"
         android:gravity="center"
-        android:text=" - " />
+        android:text="-" />
 
     <c.CTextView
         android:id="@+id/to_txt"
@@ -31,11 +32,12 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/perc_txt"
+         android:minEms="2"
         android:gravity="center"
         android:text="10" />
 
     <ImageView
-        android:paddingRight="5dp"
+        android:paddingRight="3dp"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignLeft="@+id/done_ch"
@@ -51,7 +53,7 @@
         android:button="@drawable/custom_checkbox_design"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:paddingLeft="5dp" />
+         />
 
     <c.CTextView
         android:id="@+id/part_name_txt"
@@ -60,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/done_ch"
-        android:gravity="center"
+        android:gravity="right"
         android:paddingBottom="5dp"
         android:paddingRight="5dp"
         android:paddingTop="5dp"

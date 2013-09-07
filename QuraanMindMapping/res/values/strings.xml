@@ -20,4 +20,35 @@
     <string name="mindmap">الخريطة الذهنية</string>
     <string name="virtue">فضل السورة</string>
 
+    <string-array name="from">
+        <item>1</item>
+        <item>9</item>
+        <item>27</item>
+        <item>32</item>
+        <item>47</item>
+        <item>60</item>
+        <item>83</item>
+        <item>99</item>
+    </string-array>
+    <string-array name="to">
+        <item>8</item>
+        <item>26</item>
+        <item>31</item>
+        <item>46</item>
+        <item>59</item>
+        <item>82</item>
+        <item>98</item>
+        <item>110</item>
+    </string-array>
+    <string-array name="part_name">
+        <item>مقدمة</item>
+        <item>قصة اصحاب الكهف (فتنة  الدين)</item>
+        <item>نصائح. نعيم المؤمنين</item>
+        <item>قصة اصحاب الجنتين (فتنة  المال)</item>
+        <item>محرك الفتن ابليس</item>
+        <item>قصة موسي و الخضر (فتنة  العلم)</item>
+        <item>قصة ذي القرنين(فتنة  السلطة)</item>
+        <item>الختام</item>
+    </string-array>
+
 </resources>

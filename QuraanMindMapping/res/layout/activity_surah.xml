@@ -14,10 +14,15 @@
         android:background="@drawable/top_bar_empty" />
 
     <ImageButton
-        android:id="@+id/back_btn"
+        android:id="@+id/aboutus_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/title" />
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/title" 
+        android:src="@drawable/button_aboutus_selector"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="5dp"
+        />
 
     <c.CTextView
         android:id="@+id/title"
@@ -25,8 +30,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/back_btn"
-        android:text="@string/surah_name" />
+        android:layout_toRightOf="@+id/aboutus_btn"
+        android:text="@string/surah_name"
+        android:padding="5dp" />
 
     <ImageView
         android:id="@+id/circle_img"

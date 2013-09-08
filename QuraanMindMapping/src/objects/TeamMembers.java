@@ -1,5 +1,7 @@
 package objects;
 
+import com.hm.mindmap.R;
+
 public class TeamMembers {
 	public String name = null;
 	public String position = null;
@@ -7,4 +9,5 @@ public class TeamMembers {
 	public String gPlus = null;
 	public String facebook = null;
 	public String twitter = null;
+	public int photo = R.drawable.pic_holder;
 }

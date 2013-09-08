@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/player"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center" >
+
+        <utitles.HoloCircleSeekBar
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:max="100"
+            app:pointer_color="#0174DF"
+            app:pointer_halo_color="#88252525"
+            app:pointer_size="34"
+            app:wheel_active_color="#00BFFF"
+            app:wheel_unactive_color="#FFCCCCCC" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/btn_play" />
+
+    </RelativeLayout>
+
+</LinearLayout>

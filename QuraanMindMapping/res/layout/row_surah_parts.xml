@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <c.CTextView
+        android:id="@+id/from_txt"
+        style="@style/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minEms="2"
+        android:text="0" />
+
+    <c.CTextView
+        android:id="@+id/perc_txt"
+        style="@style/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/from_txt"
+        android:gravity="center"
+        android:text="-" />
+
+    <c.CTextView
+        android:id="@+id/to_txt"
+        style="@style/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/perc_txt"
+         android:minEms="2"
+        android:gravity="center"
+        android:text="10" />
+
+    <ImageView
+        android:paddingRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/done_ch"
+        android:layout_alignRight="@+id/done_ch"
+        android:src="@drawable/timeline_bar" />
+
+    <CheckBox
+        android:id="@+id/done_ch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/to_txt"
+        android:button="@drawable/custom_checkbox_design"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+         />
+
+    <c.CTextView
+        android:id="@+id/part_name_txt"
+        style="@style/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/done_ch"
+        android:gravity="right"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="مقدمة" />
+
+</RelativeLayout>

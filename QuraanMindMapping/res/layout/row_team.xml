@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <c.CTextView
+        android:id="@+id/nameEt"
+        style="@style/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img"
+        android:text="@string/team" />
+
+    <c.CTextView
+        android:id="@+id/positionEt"
+        style="@style/textViewSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/email"
+        android:layout_below="@+id/nameEt"
+        android:layout_toLeftOf="@+id/email"
+        android:layout_toRightOf="@+id/img"
+        android:text="@string/team" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nameEt"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/twitter"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_toLeftOf="@+id/twitter"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/twitter"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_toLeftOf="@+id/facebook"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/twitter"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_toLeftOf="@+id/gmail"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

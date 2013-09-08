@@ -149,4 +149,6 @@
         <item>UI</item>
     </string-array>
 
+    <string name="title_activity_mind_map">MindMapActivity</string>
+
 </resources>

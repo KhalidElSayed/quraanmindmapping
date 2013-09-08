@@ -1,16 +1,17 @@
 package com.hm.mindmap;
 
+import utitles.HoloCircleSeekBar;
+import utitles.HoloCircleSeekBar.OnCircleSeekBarChangeListener;
 import android.app.Activity;
+import android.content.Context;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageButton;
-import android.widget.SeekBar;
-import utitles.HoloCircleSeekBar;
-import utitles.HoloCircleSeekBar.OnCircleSeekBarChangeListener;
 
 public class BranchDetailsActivity extends Activity implements
 		OnCompletionListener, OnCircleSeekBarChangeListener {
@@ -19,6 +20,7 @@ public class BranchDetailsActivity extends Activity implements
 	private MediaPlayer mp;
 	private HoloCircleSeekBar songProgressBar;
 	private Handler mHandler = new Handler();
+	public static Context CONTEXT;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class BranchDetailsActivity extends Activity implements
 		songProgressBar = (HoloCircleSeekBar) findViewById(R.id.picker);
 		songProgressBar.setOnSeekBarChangeListener(this);
 		btnPlay = (ImageButton) findViewById(R.id.btnPlay);
+		CONTEXT = this;
 		btnPlay.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -52,6 +55,16 @@ public class BranchDetailsActivity extends Activity implements
 		mp = MediaPlayer.create(this, R.raw.su18);
 		mp.setLooping(true); // Set looping
 		mp.setOnCompletionListener(this);
+		initWebView();
+	}
+
+	private void initWebView() {
+		WebView webView = (WebView) findViewById(R.id.webview);
+		webView.getSettings().setSupportZoom(true);
+		webView.getSettings().setJavaScriptEnabled(true);
+
+		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
+		webView.loadUrl("file:///android_asset/html/sample.html");
 	}
 
 	@Override

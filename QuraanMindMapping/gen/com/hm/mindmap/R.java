@@ -213,7 +213,7 @@ containing a value of this type.
         public static final int app_icon=0x7f0c0002;
         public static final int back_btn=0x7f0c0001;
         public static final int bg=0x7f0c0015;
-        public static final int btnPlay=0x7f0c0013;
+        public static final int btnPlay=0x7f0c0014;
         public static final int bullets_img1=0x7f0c001a;
         public static final int bullets_l=0x7f0c0017;
         public static final int circle_img=0x7f0c000c;
@@ -232,8 +232,8 @@ containing a value of this type.
         public static final int nameEt=0x7f0c001f;
         public static final int part_name_txt=0x7f0c001e;
         public static final int perc_txt=0x7f0c000d;
-        public static final int picker=0x7f0c0012;
-        public static final int player=0x7f0c0011;
+        public static final int picker=0x7f0c0013;
+        public static final int player=0x7f0c0012;
         public static final int positionEt=0x7f0c0021;
         public static final int share=0x7f0c0006;
         public static final int start_btn=0x7f0c0019;
@@ -245,7 +245,7 @@ containing a value of this type.
         public static final int useApp=0x7f0c0005;
         public static final int virtue_btn=0x7f0c000f;
         public static final int vote=0x7f0c0004;
-        public static final int webview=0x7f0c0014;
+        public static final int webview=0x7f0c0011;
     }
     public static final class layout {
         public static final int activity_about_app=0x7f030000;

@@ -8,10 +8,14 @@
 package com.hm.mindmap;
 
 public final class R {
+    public static final class anim {
+        public static final int custom_scale_animation=0x7f040000;
+        public static final int custom_scale_animation2=0x7f040001;
+    }
     public static final class array {
-        public static final int from=0x7f080000;
-        public static final int part_name=0x7f080002;
-        public static final int to=0x7f080001;
+        public static final int from=0x7f090000;
+        public static final int part_name=0x7f090002;
+        public static final int to=0x7f090001;
     }
     public static final class attr {
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -128,7 +132,7 @@ containing a value of this type.
         public static final int wheel_unactive_color=0x7f01000a;
     }
     public static final class color {
-        public static final int blue=0x7f060000;
+        public static final int blue=0x7f070000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -137,9 +141,9 @@ containing a value of this type.
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
-        public static final int button_hight=0x7f050002;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
+        public static final int button_hight=0x7f060002;
     }
     public static final class drawable {
         public static final int about_app_pressed=0x7f020000;
@@ -147,87 +151,93 @@ containing a value of this type.
         public static final int about_pressed=0x7f020002;
         public static final int about_unpressed=0x7f020003;
         public static final int about_us_bg=0x7f020004;
-        public static final int benifit_button=0x7f020005;
-        public static final int btn_pause=0x7f020006;
-        public static final int btn_play=0x7f020007;
-        public static final int button_aboutapp_selector=0x7f020008;
-        public static final int button_aboutus_selector=0x7f020009;
-        public static final int checkbox_hell_design=0x7f02000a;
-        public static final int checkbox_paradise_design=0x7f02000b;
-        public static final int checkbox_story_design=0x7f02000c;
-        public static final int close_button=0x7f02000d;
-        public static final int custom_checkbox_design=0x7f02000e;
-        public static final int divider=0x7f02000f;
-        public static final int fb_icon=0x7f020010;
-        public static final int general_off=0x7f020011;
-        public static final int general_on=0x7f020012;
-        public static final int hell_off=0x7f020013;
-        public static final int hell_on=0x7f020014;
-        public static final int ic_launcher=0x7f020015;
-        public static final int img_btn_pause=0x7f020016;
-        public static final int img_btn_pause_pressed=0x7f020017;
-        public static final int img_btn_play=0x7f020018;
-        public static final int img_btn_play_pressed=0x7f020019;
-        public static final int mail_icon=0x7f02001a;
-        public static final int mind_map_button=0x7f02001b;
-        public static final int off=0x7f02001c;
-        public static final int on=0x7f02001d;
-        public static final int paradise_off=0x7f02001e;
-        public static final int paradise_on=0x7f02001f;
-        public static final int pic_holder=0x7f020020;
-        public static final int story_off=0x7f020021;
-        public static final int story_on=0x7f020022;
-        public static final int timeline_bar=0x7f020023;
-        public static final int top_bar_empty=0x7f020024;
-        public static final int tw_icon=0x7f020025;
-        public static final int whole_circle=0x7f020026;
-        public static final int whole_circle1=0x7f020027;
-        public static final int whole_circle2=0x7f020028;
-        public static final int whole_circle3=0x7f020029;
-        public static final int whole_circle5=0x7f02002a;
-        public static final int whole_circle6=0x7f02002b;
-        public static final int whole_circle7=0x7f02002c;
-        public static final int whole_circle8=0x7f02002d;
+        public static final int b1_selected=0x7f020005;
+        public static final int b2_selected=0x7f020006;
+        public static final int benifit_button=0x7f020007;
+        public static final int blue_circle=0x7f020008;
+        public static final int blue_circle_2=0x7f020009;
+        public static final int btn_pause=0x7f02000a;
+        public static final int btn_play=0x7f02000b;
+        public static final int button_aboutapp_selector=0x7f02000c;
+        public static final int button_aboutus_selector=0x7f02000d;
+        public static final int checkbox_hell_design=0x7f02000e;
+        public static final int checkbox_paradise_design=0x7f02000f;
+        public static final int checkbox_story_design=0x7f020010;
+        public static final int close_button=0x7f020011;
+        public static final int content_container=0x7f020012;
+        public static final int custom_checkbox_design=0x7f020013;
+        public static final int divider=0x7f020014;
+        public static final int fb_icon=0x7f020015;
+        public static final int fire_bg=0x7f020016;
+        public static final int general_off=0x7f020017;
+        public static final int general_on=0x7f020018;
+        public static final int hell_off=0x7f020019;
+        public static final int hell_on=0x7f02001a;
+        public static final int ic_launcher=0x7f02001b;
+        public static final int img_btn_play=0x7f02001c;
+        public static final int img_btn_play_pressed=0x7f02001d;
+        public static final int mail_icon=0x7f02001e;
+        public static final int mind_map_button=0x7f02001f;
+        public static final int off=0x7f020020;
+        public static final int on=0x7f020021;
+        public static final int paradise_off=0x7f020022;
+        public static final int paradise_on=0x7f020023;
+        public static final int pic_holder=0x7f020024;
+        public static final int rounded=0x7f020025;
+        public static final int story_off=0x7f020026;
+        public static final int story_on=0x7f020027;
+        public static final int timeline_bar=0x7f020028;
+        public static final int top_bar_empty=0x7f020029;
+        public static final int tw_icon=0x7f02002a;
+        public static final int whole_circle=0x7f02002b;
+        public static final int whole_circle1=0x7f02002c;
+        public static final int whole_circle2=0x7f02002d;
+        public static final int whole_circle3=0x7f02002e;
+        public static final int whole_circle5=0x7f02002f;
+        public static final int whole_circle6=0x7f020030;
+        public static final int whole_circle7=0x7f020031;
+        public static final int whole_circle8=0x7f020032;
+        public static final int windows_7_64_bit_hd_wallpapers=0x7f020033;
     }
     public static final class id {
-        public static final int ImageSwitcher=0x7f0b0016;
-        public static final int aboutus_btn=0x7f0b000b;
-        public static final int action_settings=0x7f0b0025;
-        public static final int aim=0x7f0b0003;
-        public static final int app_icon=0x7f0b0002;
-        public static final int back_btn=0x7f0b0001;
-        public static final int btnPlay=0x7f0b0013;
-        public static final int bullets_img1=0x7f0b0018;
-        public static final int bullets_img2=0x7f0b0019;
-        public static final int bullets_l=0x7f0b0015;
-        public static final int circle_img=0x7f0b000c;
-        public static final int done_ch=0x7f0b001c;
-        public static final int email=0x7f0b0021;
-        public static final int facebook=0x7f0b0023;
-        public static final int feedback=0x7f0b0008;
-        public static final int from_txt=0x7f0b001a;
-        public static final int gmail=0x7f0b0024;
-        public static final int header=0x7f0b0009;
-        public static final int header_title=0x7f0b0014;
-        public static final int img=0x7f0b001e;
-        public static final int listView1=0x7f0b000a;
-        public static final int mindmap_btn=0x7f0b000e;
-        public static final int nameEt=0x7f0b001f;
-        public static final int part_name_txt=0x7f0b001d;
-        public static final int perc_txt=0x7f0b000d;
-        public static final int picker=0x7f0b0012;
-        public static final int player=0x7f0b0011;
-        public static final int positionEt=0x7f0b0020;
-        public static final int share=0x7f0b0006;
-        public static final int start_btn=0x7f0b0017;
-        public static final int surah_details_list=0x7f0b0010;
-        public static final int team=0x7f0b0007;
-        public static final int title=0x7f0b0000;
-        public static final int to_txt=0x7f0b001b;
-        public static final int twitter=0x7f0b0022;
-        public static final int useApp=0x7f0b0005;
-        public static final int virtue_btn=0x7f0b000f;
-        public static final int vote=0x7f0b0004;
+        public static final int ImageSwitcher=0x7f0c0017;
+        public static final int aboutus_btn=0x7f0c000b;
+        public static final int action_settings=0x7f0c0025;
+        public static final int aim=0x7f0c0003;
+        public static final int app_icon=0x7f0c0002;
+        public static final int back_btn=0x7f0c0001;
+        public static final int bg=0x7f0c0014;
+        public static final int btnPlay=0x7f0c0013;
+        public static final int bullets_img1=0x7f0c0019;
+        public static final int bullets_l=0x7f0c0016;
+        public static final int circle_img=0x7f0c000c;
+        public static final int done_ch=0x7f0c001c;
+        public static final int email=0x7f0c0021;
+        public static final int facebook=0x7f0c0023;
+        public static final int feedback=0x7f0c0008;
+        public static final int from_txt=0x7f0c001a;
+        public static final int gmail=0x7f0c0024;
+        public static final int header=0x7f0c0009;
+        public static final int header_title=0x7f0c0015;
+        public static final int img=0x7f0c001e;
+        public static final int listView1=0x7f0c000a;
+        public static final int mindmap_btn=0x7f0c000e;
+        public static final int nameEt=0x7f0c001f;
+        public static final int part_name_txt=0x7f0c001d;
+        public static final int perc_txt=0x7f0c000d;
+        public static final int picker=0x7f0c0012;
+        public static final int player=0x7f0c0011;
+        public static final int positionEt=0x7f0c0020;
+        public static final int share=0x7f0c0006;
+        public static final int start_btn=0x7f0c0018;
+        public static final int surah_details_list=0x7f0c0010;
+        public static final int team=0x7f0c0007;
+        public static final int title=0x7f0c0000;
+        public static final int to_txt=0x7f0c001b;
+        public static final int twitter=0x7f0c0022;
+        public static final int useApp=0x7f0c0005;
+        public static final int virtue_btn=0x7f0c000f;
+        public static final int vote=0x7f0c0004;
     }
     public static final class layout {
         public static final int activity_about_app=0x7f030000;
@@ -241,41 +251,41 @@ containing a value of this type.
         public static final int row_team=0x7f030008;
     }
     public static final class menu {
-        public static final int about_app=0x7f0a0000;
-        public static final int about_team=0x7f0a0001;
-        public static final int how_to_use=0x7f0a0002;
-        public static final int splash=0x7f0a0003;
-        public static final int surah=0x7f0a0004;
+        public static final int about_app=0x7f0b0000;
+        public static final int about_team=0x7f0b0001;
+        public static final int how_to_use=0x7f0b0002;
+        public static final int splash=0x7f0b0003;
+        public static final int surah=0x7f0b0004;
     }
     public static final class raw {
-        public static final int su18=0x7f040000;
+        public static final int su18=0x7f050000;
     }
     public static final class string {
-        public static final int about=0x7f070005;
-        public static final int action_settings=0x7f070001;
-        public static final int aim=0x7f070006;
-        public static final int app_name=0x7f070000;
-        public static final int feedback=0x7f07000b;
-        public static final int hello_world=0x7f070002;
-        public static final int how_to_use=0x7f070012;
-        public static final int how_to_use_tt=0x7f070011;
-        public static final int mindmap=0x7f07000e;
-        public static final int share=0x7f070009;
-        public static final int surah_name=0x7f07000d;
-        public static final int team=0x7f07000a;
-        public static final int title_activity_about_app=0x7f070004;
-        public static final int title_activity_about_team=0x7f07000c;
-        public static final int title_activity_how_to_use=0x7f070010;
-        public static final int title_activity_surah=0x7f070003;
-        public static final int useapp=0x7f070008;
-        public static final int virtue=0x7f07000f;
-        public static final int vote=0x7f070007;
+        public static final int about=0x7f080005;
+        public static final int action_settings=0x7f080001;
+        public static final int aim=0x7f080006;
+        public static final int app_name=0x7f080000;
+        public static final int feedback=0x7f08000b;
+        public static final int hello_world=0x7f080002;
+        public static final int how_to_use=0x7f080012;
+        public static final int how_to_use_tt=0x7f080011;
+        public static final int mindmap=0x7f08000e;
+        public static final int share=0x7f080009;
+        public static final int surah_name=0x7f08000d;
+        public static final int team=0x7f08000a;
+        public static final int title_activity_about_app=0x7f080004;
+        public static final int title_activity_about_team=0x7f08000c;
+        public static final int title_activity_how_to_use=0x7f080010;
+        public static final int title_activity_surah=0x7f080003;
+        public static final int useapp=0x7f080008;
+        public static final int virtue=0x7f08000f;
+        public static final int vote=0x7f080007;
     }
     public static final class style {
-        public static final int ActvityBackGround=0x7f090001;
-        public static final int AppTheme=0x7f090000;
-        public static final int Button=0x7f090005;
-        public static final int HelpImageAligStyle=0x7f090008;
+        public static final int ActvityBackGround=0x7f0a0001;
+        public static final int AppTheme=0x7f0a0000;
+        public static final int Button=0x7f0a0005;
+        public static final int HelpImageAligStyle=0x7f0a0008;
         /**  <item name="android:background">@drawable/button_main_selector</item> 
  <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton"> 
  <item name="android:button">@drawable/radiobutton_selector</item> 
@@ -287,18 +297,18 @@ containing a value of this type.
  <item name="android:gravity">start|center_vertical</item> 
  <item name="android:textColor">@color/blue</item> 
          */
-        public static final int HelpTextStyle=0x7f090006;
-        public static final int edittextInfo=0x7f090009;
-        public static final int textViewInfo=0x7f090003;
-        public static final int textViewSmall=0x7f090004;
-        public static final int textViewSmallHelp=0x7f090007;
+        public static final int HelpTextStyle=0x7f0a0006;
+        public static final int edittextInfo=0x7f0a0009;
+        public static final int textViewInfo=0x7f0a0003;
+        public static final int textViewSmall=0x7f0a0004;
+        public static final int textViewSmallHelp=0x7f0a0007;
         /**  <item name="android:layout_width">fill_parent</item> 
  <item name="android:layout_height">wrap_content</item> 
  <item name="android:gravity">left</item> 
  <item name="android:textColor">#00FF00</item> 
  <item name="android:typeface">monospace</item> 
          */
-        public static final int textViewTitle=0x7f090002;
+        public static final int textViewTitle=0x7f0a0002;
     }
     public static final class styleable {
         /** Attributes that can be used with a HoloCircleSeekBar.

@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.hm.mindmap"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <RelativeLayout
-        android:id="@+id/player"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
 
-        <utitles.HoloCircleSeekBar
-            android:id="@+id/picker"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:max="100"
-            app:pointer_color="#0174DF"
-            app:pointer_halo_color="#88252525"
-            app:pointer_size="34"
-            app:wheel_active_color="#00BFFF"
-            app:wheel_unactive_color="#FFCCCCCC" />
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/content_container" >
+        </RelativeLayout>
 
-        <ImageButton
-            android:id="@+id/btnPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <RelativeLayout
+            android:id="@+id/player"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:background="@null"
-            android:src="@drawable/btn_play" />
+            android:background="@drawable/rounded" >
 
+            <utitles.HoloCircleSeekBar
+                android:id="@+id/picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                app:max="100"
+                app:pointer_color="#F09400"
+         
+                app:pointer_size="10"
+                app:wheel_active_color="#F09400"
+                app:wheel_size="10"
+                app:wheel_unactive_color="#f7f7f7" />
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/btn_play" />
+        </RelativeLayout>
     </RelativeLayout>
 
 </LinearLayout>

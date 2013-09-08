@@ -4,6 +4,12 @@
     android:layout_height="match_parent"
     tools:context=".Intro" >
 
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/windows_7_64_bit_hd_wallpapers" />
+    
     <LinearLayout
         android:id="@+id/header_title"
         android:layout_width="match_parent"
@@ -103,14 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:src="@drawable/on" />
-
-            <ImageView
-                android:id="@+id/bullets_img2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:src="@drawable/off" />
+                android:src="@drawable/b1_selected" />
         </LinearLayout>
     </RelativeLayout>
 

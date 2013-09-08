@@ -58,43 +58,61 @@ public class TeamMemberAdapter extends BaseAdapter {
 			holder.nameEt = (TextView) convertView.findViewById(R.id.nameEt);
 			holder.positionEt = (TextView) convertView
 					.findViewById(R.id.positionEt);
-
+			holder.email = (ImageView) convertView.findViewById(R.id.email);
+			holder.twitter = (ImageView) convertView.findViewById(R.id.twitter);
+			holder.facebook = (ImageView) convertView.findViewById(R.id.facebook);
+			holder.positionEt = (TextView) convertView
+					.findViewById(R.id.positionEt);
 		}
 		holder = (ViewHolder) convertView.getTag();
 
 		holder.nameEt.setText(TeamMembers.name);
 		holder.positionEt.setText(TeamMembers.position);
 
-		// holder.done_ch.setOnClickListener(new View.OnClickListener() {
-		// int p = surahParts.part_num;
-		//
-		// public void onClick(View v) {
-		// CheckBox cb = (CheckBox) v;
-		//
-		// if (cb.isChecked()) {
-		//
-		// activity.addToCounter(p);
-		// surahParts.done = true;
-		// } else {
-		// activity.removeFromCounter(p);
-		// surahParts.done = false;
-		// }
-		// }
-		// });
+		holder.email.setOnClickListener(new View.OnClickListener() {
+			String p = TeamMembers.email;
+
+			public void onClick(View v) {
+				sendMail(p);
+
+			}
+		});
+		holder.facebook.setOnClickListener(new View.OnClickListener() {
+			String p = TeamMembers.facebook;
+
+			public void onClick(View v) {
+				OpenLink(p);
+
+			}
+		});
+		holder.twitter.setOnClickListener(new View.OnClickListener() {
+			String p = TeamMembers.twitter;
+
+			public void onClick(View v) {
+				OpenLink(p);
+
+			}
+		});
 		return convertView;
 	}
 
 	private void inializeValues() {
 		String[] name = activity.getResources().getStringArray(R.array.name);
 		String[] pos = activity.getResources().getStringArray(R.array.pos);
-		// String[] part_name = activity.getResources().getStringArray(
-		// R.array.part_name);
+		String[] fb = activity.getResources().getStringArray(R.array.fb);
+		String[] linked = activity.getResources()
+				.getStringArray(R.array.linked);
+		String[] mail = activity.getResources().getStringArray(R.array.mail);
 
 		for (int i = 0; i < name.length; i++) {
 			TeamMembers TeamMembers = new TeamMembers();
 			// TeamMembers.done = activity.isDone(i);
 			TeamMembers.name = name[i];
 			TeamMembers.position = pos[i];
+			TeamMembers.facebook = fb[i];
+			TeamMembers.email = mail[i];
+			TeamMembers.twitter = linked[i];
+
 			// SurahParts.nameOfPart = part_name[i];
 
 			data.add(TeamMembers);
@@ -104,11 +122,14 @@ public class TeamMemberAdapter extends BaseAdapter {
 
 	void sendMail(String m) {
 		Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-				"mailto", "", "info@nabd.mobi"));
-		emailIntent.putExtra(Intent.EXTRA_SUBJECT,
-				"Requests and comments from Islamiyat Al Majdouie application");
+				"mailto", "", m));
+		emailIntent.putExtra(Intent.EXTRA_SUBJECT, "");
 		emailIntent.putExtra(Intent.EXTRA_TEXT, "");
 		activity.startActivity(Intent.createChooser(emailIntent, "Send mail"));
+	}
+
+	void OpenLink(String l) {
+		activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(l)));
 	}
 
 	private class ViewHolder {

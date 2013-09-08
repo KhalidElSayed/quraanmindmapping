@@ -14,7 +14,9 @@ public final class R {
     }
     public static final class array {
         public static final int from=0x7f090000;
+        public static final int name=0x7f090003;
         public static final int part_name=0x7f090002;
+        public static final int pos=0x7f090004;
         public static final int to=0x7f090001;
     }
     public static final class attr {
@@ -193,16 +195,17 @@ containing a value of this type.
         public static final int whole_circle1=0x7f02002c;
         public static final int whole_circle2=0x7f02002d;
         public static final int whole_circle3=0x7f02002e;
-        public static final int whole_circle5=0x7f02002f;
-        public static final int whole_circle6=0x7f020030;
-        public static final int whole_circle7=0x7f020031;
-        public static final int whole_circle8=0x7f020032;
-        public static final int windows_7_64_bit_hd_wallpapers=0x7f020033;
+        public static final int whole_circle4=0x7f02002f;
+        public static final int whole_circle5=0x7f020030;
+        public static final int whole_circle6=0x7f020031;
+        public static final int whole_circle7=0x7f020032;
+        public static final int whole_circle8=0x7f020033;
+        public static final int windows_7_64_bit_hd_wallpapers=0x7f020034;
     }
     public static final class id {
         public static final int ImageSwitcher=0x7f0c0017;
         public static final int aboutus_btn=0x7f0c000b;
-        public static final int action_settings=0x7f0c0025;
+        public static final int action_settings=0x7f0c0026;
         public static final int aim=0x7f0c0003;
         public static final int app_icon=0x7f0c0002;
         public static final int back_btn=0x7f0c0001;
@@ -211,18 +214,19 @@ containing a value of this type.
         public static final int bullets_img1=0x7f0c0019;
         public static final int bullets_l=0x7f0c0016;
         public static final int circle_img=0x7f0c000c;
+        public static final int closeDialog_btn=0x7f0c0024;
         public static final int done_ch=0x7f0c001c;
         public static final int email=0x7f0c0021;
         public static final int facebook=0x7f0c0023;
         public static final int feedback=0x7f0c0008;
         public static final int from_txt=0x7f0c001a;
-        public static final int gmail=0x7f0c0024;
         public static final int header=0x7f0c0009;
         public static final int header_title=0x7f0c0015;
-        public static final int img=0x7f0c001e;
+        public static final int img=0x7f0c001f;
+        public static final int info=0x7f0c0025;
         public static final int listView1=0x7f0c000a;
         public static final int mindmap_btn=0x7f0c000e;
-        public static final int nameEt=0x7f0c001f;
+        public static final int nameEt=0x7f0c001e;
         public static final int part_name_txt=0x7f0c001d;
         public static final int perc_txt=0x7f0c000d;
         public static final int picker=0x7f0c0012;
@@ -249,6 +253,7 @@ containing a value of this type.
         public static final int intro=0x7f030006;
         public static final int row_surah_parts=0x7f030007;
         public static final int row_team=0x7f030008;
+        public static final int tutorial_dialog=0x7f030009;
     }
     public static final class menu {
         public static final int about_app=0x7f0b0000;
@@ -267,18 +272,23 @@ containing a value of this type.
         public static final int app_name=0x7f080000;
         public static final int feedback=0x7f08000b;
         public static final int hello_world=0x7f080002;
-        public static final int how_to_use=0x7f080012;
-        public static final int how_to_use_tt=0x7f080011;
+        public static final int how_to_use=0x7f080016;
+        public static final int how_to_use_tt=0x7f080015;
         public static final int mindmap=0x7f08000e;
+        public static final int mindmap_data=0x7f080012;
+        public static final int mindmap_tit=0x7f080011;
         public static final int share=0x7f080009;
+        public static final int start=0x7f080017;
         public static final int surah_name=0x7f08000d;
         public static final int team=0x7f08000a;
         public static final int title_activity_about_app=0x7f080004;
         public static final int title_activity_about_team=0x7f08000c;
-        public static final int title_activity_how_to_use=0x7f080010;
+        public static final int title_activity_how_to_use=0x7f080014;
         public static final int title_activity_surah=0x7f080003;
         public static final int useapp=0x7f080008;
         public static final int virtue=0x7f08000f;
+        public static final int virtue_data=0x7f080013;
+        public static final int virtue_tit=0x7f080010;
         public static final int vote=0x7f080007;
     }
     public static final class style {

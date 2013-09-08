@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/pic_holder" />
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp" >
 
     <c.CTextView
         android:id="@+id/nameEt"
@@ -17,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/img"
+        android:gravity="left|center_vertical"
         android:text="@string/team" />
 
     <c.CTextView
@@ -25,45 +21,44 @@
         style="@style/textViewSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/email"
+        android:layout_alignLeft="@+id/nameEt"
         android:layout_below="@+id/nameEt"
-        android:layout_toLeftOf="@+id/email"
-        android:layout_toRightOf="@+id/img"
+        android:layout_marginTop="15dp"
+        android:gravity="left|center_vertical"
         android:text="@string/team" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:src="@drawable/pic_holder" />
 
     <ImageView
         android:id="@+id/twitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/nameEt"
+        android:layout_above="@+id/email"
+        android:layout_alignRight="@+id/img"
         android:src="@drawable/tw_icon" />
 
     <ImageView
         android:id="@+id/facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/twitter"
+        android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/twitter"
-        android:layout_toLeftOf="@+id/twitter"
         android:src="@drawable/fb_icon" />
-
-    <ImageView
-        android:id="@+id/gmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/twitter"
-        android:layout_alignTop="@+id/twitter"
-        android:layout_toLeftOf="@+id/facebook"
-        android:src="@drawable/ic_launcher" />
 
     <ImageView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/twitter"
-        android:layout_alignTop="@+id/twitter"
-        android:layout_toLeftOf="@+id/gmail"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/twitter"
         android:src="@drawable/mail_icon" />
 
 </RelativeLayout>

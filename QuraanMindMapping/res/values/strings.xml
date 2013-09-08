@@ -127,5 +127,26 @@
         <item>Android Developer</item>
         <item>UI Designer</item>
     </string-array>
+    <string-array name="fb">
+        <item>https://www.facebook.com/ekayed</item>
+        <item> https://www.facebook.com/hallola.mohammed</item>
+        <item>https://www.facebook.com/eng.mohammed.alawady</item>
+        <item>https://www.facebook.com/mohamed.hemdan.elhelow</item>
+        <item> https://www.facebook.com/pages/SherifAhmed-Freelancer-graphic-designer/137056376366905</item>
+    </string-array>
+    <string-array name="mail">
+        <item>ekayed@gmail.com</item>
+        <item>halaadly@gmail.com</item>
+        <item>eng.mohammed.alawady@gmail.com</item>
+        <item>eng.mohamedelhelow@gmail.com</item>
+        <item>sherifshaabann99@yahoo.com</item>
+    </string-array>
+    <string-array name="linked">
+        <item>UX</item>
+        <item>Android</item>
+        <item>UX</item>
+        <item>Android</item>
+        <item>UI</item>
+    </string-array>
 
 </resources>

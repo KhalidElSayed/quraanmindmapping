@@ -64,7 +64,7 @@ public class BranchDetailsActivity extends Activity implements
 		webView.getSettings().setJavaScriptEnabled(true);
 
 		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
-		webView.loadUrl("file:///android_asset/html/sample.html");
+		webView.loadUrl("file:///android_asset/html/sample_1_8.html");
 	}
 
 	@Override

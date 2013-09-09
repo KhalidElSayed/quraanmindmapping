@@ -142,11 +142,13 @@
         <item>sherifshaabann99@yahoo.com</item>
     </string-array>
     <string-array name="linked">
-        <item>UX</item>
-        <item>Android</item>
-        <item>UX</item>
-        <item>Android</item>
+        <item>http://eg.linkedin.com/in/ekayed</item>
+        <item>http://eg.linkedin.com/pub/hala-adly-mohammed/1a/551/317</item>
+        <item>http://www.linkedin.com/pub/mohammed-al-awady/28/57b/396</item>
+        <item>http://www.linkedin.com/in/mohamedhemdan</item>
         <item>UI</item>
     </string-array>
+
+    <string name="title_activity_mind_map">MindMapActivity</string>
 
 </resources>

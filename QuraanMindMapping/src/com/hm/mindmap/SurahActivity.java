@@ -78,8 +78,9 @@ public class SurahActivity extends ParentActivity {
 	@Override
 	public void onClick(View v) {
 		if (v == mindmapBtn) {
-			new PopUpDialog(this).show(R.string.mindmap_tit,
-					R.string.mindmap_data);
+//			
+			startActivity(new Intent(getApplicationContext(),
+					MindMapActivity.class));
 		} else if (v == virtueBtn) {
 			new PopUpDialog(this).show(R.string.virtue_tit,
 					R.string.virtue_data);

@@ -17,7 +17,18 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp" >
+<!-- =======
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/start" />
 
+    <RelativeLayout
+        android:id="@+id/bullets_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_btn"
+>>>>>>> e0c8b905cbdb86ea2fd364317d24a52fac6cf4ad -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

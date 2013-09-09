@@ -23,7 +23,7 @@
         <activity
             android:name="com.hm.mindmap.SplashActivity"
             android:label="@string/app_name" >
-          
+ 
         </activity>
         <activity android:name="com.hm.mindmap.ParentActivity" >
         </activity>
@@ -48,6 +48,13 @@
             android:name="com.hm.mindmap.AboutTeamActivity"
             android:label="@string/title_activity_about_team" >
              
+        </activity>
+        <activity android:name="AdvancedWebView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

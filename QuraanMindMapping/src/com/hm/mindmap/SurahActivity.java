@@ -39,7 +39,13 @@ public class SurahActivity extends ParentActivity {
 			
 		}
 		circleImg.setImageResource(parts[totalparts]);
-		percTxt.setText(totalparts/parts.length*100+" %");
+
+		percTxt.setText(getPercetage());
+	}
+
+	private CharSequence getPercetage() {
+		Double d=(double) (totalparts*100/(parts.length-1));
+		return Math.round(d)+" %";
 	}
 
 	private void findViews() {
@@ -67,14 +73,14 @@ public class SurahActivity extends ParentActivity {
 	public void addToCounter(int i) {
 		totalparts++;
 		circleImg.setImageResource(parts[totalparts]);
-		percTxt.setText(totalparts/parts.length*100+" %");
+		percTxt.setText(getPercetage());
 		updateParts(i, true);
 	}
 
 	public void removeFromCounter(int i) {
 		totalparts--;
 		circleImg.setImageResource(parts[totalparts]);
-		percTxt.setText(totalparts/parts.length*100+" %");
+		percTxt.setText(getPercetage());
 		updateParts(i, false);
 	}
 
@@ -148,4 +154,6 @@ public class SurahActivity extends ParentActivity {
 		}
 
 	}
+
+	
 }

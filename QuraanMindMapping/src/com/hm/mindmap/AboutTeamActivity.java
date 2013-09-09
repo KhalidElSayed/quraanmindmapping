@@ -1,22 +1,21 @@
 package com.hm.mindmap;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
+import java.util.ArrayList;
 
-public class AboutTeamActivity extends Activity {
+import objects.TeamMembers;
+import adapter.TeamMemberAdapter;
+import android.os.Bundle;
+import android.widget.ListView;
+
+public class AboutTeamActivity extends ParentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.activity_about_team);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.about_team, menu);
-		return true;
+		super.onCreate(savedInstanceState);
+		ListView lv=(ListView) findViewById(R.id.listView1);
+		lv.setAdapter(new TeamMemberAdapter(this, new ArrayList<TeamMembers>()));
 	}
 
 }

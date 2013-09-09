@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import c.CTextView;
+import c.PopUpDialog;
 import data.StoreData;
 
 public class SurahActivity extends ParentActivity {
@@ -24,7 +25,7 @@ public class SurahActivity extends ParentActivity {
 	StoreData data = new StoreData();
 	int[] parts = { R.drawable.whole_circle, R.drawable.whole_circle1,
 			R.drawable.whole_circle2, R.drawable.whole_circle3,
-			R.drawable.whole_circle3, R.drawable.whole_circle5,
+			R.drawable.whole_circle4, R.drawable.whole_circle5,
 			R.drawable.whole_circle6, R.drawable.whole_circle7,
 			R.drawable.whole_circle8 };
 
@@ -77,9 +78,11 @@ public class SurahActivity extends ParentActivity {
 	@Override
 	public void onClick(View v) {
 		if (v == mindmapBtn) {
-			// Handle clicks for mindmapBtn
+			new PopUpDialog(this).show(R.string.mindmap_tit,
+					R.string.mindmap_data);
 		} else if (v == virtueBtn) {
-			// Handle clicks for virtueBtn
+			new PopUpDialog(this).show(R.string.virtue_tit,
+					R.string.virtue_data);
 		} else if (v == aboutus_btn) {
 			startActivity(new Intent(getApplicationContext(),
 					AboutAppActivity.class));

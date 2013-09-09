@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/back_btn"
         android:layout_centerHorizontal="true"
+         android:cacheColorHint="@android:color/transparent"
         android:divider="@drawable/divider"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"

@@ -142,6 +142,8 @@ public class HoloCircleSeekBar extends View {
 	private int last_radians = 0;
 	private boolean block_start = false;
 
+//	private int arc_finish_radians = 360;
+//	private int start_arc = 270;
 	private int arc_finish_radians = 360;
 	private int start_arc = 270;
 

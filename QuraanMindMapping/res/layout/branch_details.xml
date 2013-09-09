@@ -7,17 +7,22 @@
     android:orientation="vertical" >
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:layout_marginBottom="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/content_container" >
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -36,7 +41,6 @@
                 android:layout_alignParentRight="true"
                 app:max="100"
                 app:pointer_color="#F09400"
-         
                 app:pointer_size="10"
                 app:wheel_active_color="#F09400"
                 app:wheel_size="10"

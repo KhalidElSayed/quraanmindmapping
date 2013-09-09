@@ -46,7 +46,8 @@ public class SurahActivity extends ParentActivity {
 					@Override
 					public void onItemClick(AdapterView<?> arg0, View arg1,
 							int arg2, long arg3) {
-						// TODO Auto-generated method stub
+						startActivity(new Intent(getApplicationContext(),
+								BranchDetailsActivity.class));
 
 					}
 				});
@@ -97,7 +98,7 @@ public class SurahActivity extends ParentActivity {
 
 	public void removeFromCounter(int i) {
 		if (totalparts > 0)
-		totalparts--;
+			totalparts--;
 		circleImg.setImageResource(parts[totalparts]);
 		percTxt.setText(getPercetage());
 		updateParts(i, false);

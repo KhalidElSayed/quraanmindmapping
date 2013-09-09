@@ -9,113 +9,50 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/windows_7_64_bit_hd_wallpapers" />
-    
-    <LinearLayout
-        android:id="@+id/header_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="@android:color/background_dark"
-        android:gravity="center_vertical"
-        android:orientation="vertical"
-        android:paddingTop="5dp" >
-
-        <!-- <c.CTextView -->
-        <!-- android:id="@+id/intro_title" -->
-        <!-- style="@style/textViewTitle" -->
-        <!-- android:layout_width="match_parent" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_marginTop="-6dp" -->
-        <!-- android:padding="5dp" -->
-        <!-- android:text="@string/intro_1" /> -->
-    </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bullets_l"
-        android:layout_below="@+id/header_title"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:padding="10dp" >
-
-        <ImageSwitcher
-            android:id="@+id/ImageSwitcher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true" >
-        </ImageSwitcher>
-
-        <!-- <ImageButton -->
-        <!-- android:id="@+id/next_img_btn" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_alignParentRight="true" -->
-        <!-- android:layout_centerVertical="true" -->
-        <!-- android:background="@android:color/transparent" -->
-        <!-- android:src="@drawable/right_arrow" /> -->
-
-
-        <!-- <ImageButton -->
-        <!-- android:id="@+id/perv_img_btn" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_alignParentLeft="true" -->
-        <!-- android:layout_centerVertical="true" -->
-        <!-- android:background="@android:color/transparent" -->
-        <!-- android:src="@drawable/left_arrow_images" /> -->
-
-
-        <!-- <ImageButton -->
-        <!-- android:id="@+id/tipTool" -->
-        <!-- android:layout_width="wrap_content" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_above="@+id/start_btn" -->
-        <!-- android:layout_alignParentRight="true" -->
-        <!-- android:layout_alignParentBottom="true" -->
-        <!-- android:layout_marginBottom="10dp" -->
-        <!-- android:background="@android:color/transparent" -->
-        <!-- android:src="@drawable/arrow_left_help" /> -->
-    </RelativeLayout>
-
-    <c.CButton
-        android:id="@+id/start_btn"
-        style="@style/Button"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/button_hight"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="start_local" />
-
-    <RelativeLayout
-        android:id="@+id/bullets_l"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/start_btn"
         android:layout_marginBottom="30dp" >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="horizontal" >
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageSwitcher
+                    android:id="@+id/ImageSwitcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </ImageSwitcher>
+
+                <ImageView
+                    android:id="@+id/start"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignBottom="@+id/ImageSwitcher"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/button_start_selector"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
 
             <ImageView
                 android:id="@+id/bullets_img1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="30dp"
                 android:padding="5dp"
                 android:src="@drawable/b1_selected" />
         </LinearLayout>
     </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-    </LinearLayout>
 
 </RelativeLayout>

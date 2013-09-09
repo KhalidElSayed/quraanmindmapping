@@ -26,13 +26,13 @@ public class Intro extends ParentActivity implements ViewFactory,
 	// ImageButton next, perv;
 	// ImageView moveLeft_img;
 	// TextView intro_title;
-	Button start_btn;
 	ImageView bullets_img;
 	int current = 0;
 	private int downX;
 	private int upX;
 	ImageView bg;
 	Animation animationScaleDown;
+	ImageView startBTN;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +46,14 @@ public class Intro extends ParentActivity implements ViewFactory,
 		iSwitcher = (ImageSwitcher) findViewById(R.id.ImageSwitcher);
 		iSwitcher.setFactory(this);
 		iSwitcher.setInAnimation(AnimationUtils.loadAnimation(this,
-				android.R.anim.fade_in));
+				android.R.anim.slide_out_right));
 		iSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this,
-				android.R.anim.fade_out));
+				android.R.anim.slide_in_left));
 		bullets_img = (ImageView) findViewById(R.id.bullets_img1);
+		startBTN = (ImageView) findViewById(R.id.start);
+		startBTN.setOnClickListener(this);
 		iSwitcher.setOnTouchListener(new OnTouchListener() {
+			int current = 0;
 
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
@@ -65,34 +68,41 @@ public class Intro extends ParentActivity implements ViewFactory,
 					upX = (int) event.getX();
 					// Log.i("event.getX()", " upX " + downX);
 					if (upX - downX > 100) {
-						iSwitcher.setImageResource(pics[0]);
-						bullets_img
-								.setImageResource(R.drawable.b1_selected);
+						startBTN.setVisibility(View.GONE);
+						if (current != 0) {
+							iSwitcher.setImageResource(pics[0]);
+							bullets_img
+									.setImageResource(R.drawable.b1_selected);
+							current = 0;
+						}
 						// curIndex current image index in array viewed by user
-//						current--;
-//						if (current >= 0) {
-//							current=1;
-//							iSwitcher.setImageResource(pics[current]);
-//							bullets_img
-//									.setImageResource(R.drawable.b1_selected);
-//							
-//						}  
+						// current--;
+						// if (current >= 0) {
+						// current=1;
+						// iSwitcher.setImageResource(pics[current]);
+						// bullets_img
+						// .setImageResource(R.drawable.b1_selected);
+						//
+						// }
 
 						// iSwitcher.setInAnimation(AnimationUtils.loadAnimation(Intro.this,android.R.anim.slide_in_left));
 						// iSwitcher.setOutAnimation(AnimationUtils.loadAnimation(Intro.this,android.R.anim.slide_out_right));
 
 						// GalleryActivity.this.setTitle(curIndex);
-					}else if (downX - upX > -100) {
+					} else if (downX - upX > -100) {
+						if (current != 1) {
 						iSwitcher.setImageResource(pics[1]);
-						bullets_img
-								.setImageResource(R.drawable.b2_selected);
-//						current++;
-//						if (current < 2) {
-//							current=0;
-//							iSwitcher.setImageResource(pics[current]);
-//							bullets_img
-//									.setImageResource(R.drawable.b2_selected);
-//						} 
+						bullets_img.setImageResource(R.drawable.b2_selected);
+						startBTN.setVisibility(View.VISIBLE);
+						current=1;
+						}
+						// current++;
+						// if (current < 2) {
+						// current=0;
+						// iSwitcher.setImageResource(pics[current]);
+						// bullets_img
+						// .setImageResource(R.drawable.b2_selected);
+						// }
 						// iSwitcher.setInAnimation(AnimationUtils.loadAnimation(Intro.this,android.R.anim.slide_out_right));
 						// iSwitcher.setOutAnimation(AnimationUtils.loadAnimation(Intro.this,android.R.anim.slide_in_left));
 
@@ -109,8 +119,6 @@ public class Intro extends ParentActivity implements ViewFactory,
 		// bullets_img[0] = (ImageView) findViewById(R.id.bullets_img1);
 		// bullets_img[1] = (ImageView) findViewById(R.id.bullets_img2);
 
-		start_btn = (Button) findViewById(R.id.start_btn);
-		start_btn.setOnClickListener(this);
 		// checkImageLocation();
 		bg = (ImageView) findViewById(R.id.bg);
 		animationScaleDown = AnimationUtils.loadAnimation(
@@ -157,7 +165,7 @@ public class Intro extends ParentActivity implements ViewFactory,
 	@Override
 	public void onClick(View v) {
 
-		if (v == start_btn) {
+		if (v == startBTN) {
 			Intent i = new Intent(getApplicationContext(), SurahActivity.class);
 			startActivity(i);
 			finish();

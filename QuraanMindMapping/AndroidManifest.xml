@@ -17,6 +17,11 @@
         <activity
             android:name="com.hm.mindmap.BranchDetailsActivity"
             android:label="Branch Details" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.hm.mindmap.SplashActivity"
@@ -29,11 +34,6 @@
             android:label="@string/title_activity_surah" >
         </activity>
         <activity android:name="com.hm.mindmap.Intro" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.hm.mindmap.AboutAppActivity"
@@ -44,11 +44,6 @@
             android:label="@string/title_activity_about_team" >
         </activity>
         <activity android:name="com.hm.mindmap.AdvancedWebView" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.hm.mindmap.HowToUseActivity"

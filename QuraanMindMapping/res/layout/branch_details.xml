@@ -11,6 +11,7 @@
         android:layout_height="match_parent" >
 
         <RelativeLayout
+            android:id="@+id/webviewContaner"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginBottom="40dp"
@@ -19,11 +20,18 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/content_container" >
 
-            <WebView
+            <FrameLayout
+                android:id="@+id/webviewContaner2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+            <!--
+               <WebView
                 android:id="@+id/webview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent" />
+            -->
         </RelativeLayout>
 
         <RelativeLayout

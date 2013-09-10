@@ -8,10 +8,14 @@ import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.webkit.WebView;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 
 public class BranchDetailsActivity extends Activity implements
 		OnCompletionListener, OnCircleSeekBarChangeListener {
@@ -59,13 +63,22 @@ public class BranchDetailsActivity extends Activity implements
 	}
 
 	private void initWebView() {
-		WebView webView = (WebView) findViewById(R.id.webview);
-		webView.getSettings().setSupportZoom(true);
-		webView.getSettings().setJavaScriptEnabled(true);
-
-		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
+		WebView webView = new WebView(this);
+	
+		DisplayMetrics displaymetrics = new DisplayMetrics();
+		getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+		int height = displaymetrics.heightPixels;
+		int width = displaymetrics.widthPixels;
+		FrameLayout container = (FrameLayout) findViewById(R.id.webviewContaner2);
+		container.addView(webView, new FrameLayout.LayoutParams(
+				FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
+//		webView.getSettings().setSupportZoom(true);
+//		webView.getSettings().setJavaScriptEnabled(true);
+//		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
 		webView.loadUrl("file:///android_asset/html/sample.html");
 		webView.setBackgroundColor(0x00000000);
+		// webView.setLayoutParams(new RelativeLayout.LayoutParams(width,
+		// height));
 	}
 
 	@Override

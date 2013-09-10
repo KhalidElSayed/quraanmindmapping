@@ -25,6 +25,7 @@ public class BranchDetailsActivity extends Activity implements
 	private HoloCircleSeekBar songProgressBar;
 	private Handler mHandler = new Handler();
 	public static Context CONTEXT;
+	int position;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class BranchDetailsActivity extends Activity implements
 		songProgressBar.setOnSeekBarChangeListener(this);
 		btnPlay = (ImageButton) findViewById(R.id.btnPlay);
 		CONTEXT = this;
+		position = getIntent().getExtras().getInt("pos");
 		btnPlay.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -56,29 +58,52 @@ public class BranchDetailsActivity extends Activity implements
 
 			}
 		});
-		mp = MediaPlayer.create(this, R.raw.su18);
+		switch (position) {
+		case 0:
+			mp = MediaPlayer.create(this, R.raw.kahf1);
+			break;
+		case 1:
+			mp = MediaPlayer.create(this, R.raw.kahf2);
+			break;
+		case 2:
+			mp = MediaPlayer.create(this, R.raw.kahf3);
+			break;
+		case 3:
+			mp = MediaPlayer.create(this, R.raw.kahf4);
+			break;
+		case 4:
+			mp = MediaPlayer.create(this, R.raw.kahf5);
+			break;
+		case 5:
+			mp = MediaPlayer.create(this, R.raw.kahf6);
+			break;
+		case 6:
+			mp = MediaPlayer.create(this, R.raw.kahf7);
+			break;
+		case 7:
+			mp = MediaPlayer.create(this, R.raw.kahf8);
+			break;
+		default:
+			break;
+		}
+
+		// mp = MediaPlayer.create(this, R.raw.su18);
 		mp.setLooping(true); // Set looping
 		mp.setOnCompletionListener(this);
 		initWebView();
 	}
 
 	private void initWebView() {
-		WebView webView = new WebView(this);
-	
-		DisplayMetrics displaymetrics = new DisplayMetrics();
-		getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
-		int height = displaymetrics.heightPixels;
-		int width = displaymetrics.widthPixels;
-		FrameLayout container = (FrameLayout) findViewById(R.id.webviewContaner2);
-		container.addView(webView, new FrameLayout.LayoutParams(
-				FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
-//		webView.getSettings().setSupportZoom(true);
-//		webView.getSettings().setJavaScriptEnabled(true);
-//		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
-		webView.loadUrl("file:///android_asset/html/sample.html");
+		WebView webView = (WebView) findViewById(R.id.webview);
+		webView.getSettings().setSupportZoom(true);
+		webView.getSettings().setJavaScriptEnabled(true);
+
+		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
+
+		webView.loadUrl("file:///android_asset/html/sample_1_8.html");
+
 		webView.setBackgroundColor(0x00000000);
-		// webView.setLayoutParams(new RelativeLayout.LayoutParams(width,
-		// height));
+
 	}
 
 	@Override
@@ -150,6 +175,8 @@ public class BranchDetailsActivity extends Activity implements
 		super.onDestroy();
 		if (mp != null)
 			mp.release();
+		mHandler.removeCallbacks(mUpdateTimeTask);
+
 	}
 
 	@Override

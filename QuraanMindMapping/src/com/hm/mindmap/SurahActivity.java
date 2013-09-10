@@ -46,9 +46,13 @@ public class SurahActivity extends ParentActivity {
 
 					@Override
 					public void onItemClick(AdapterView<?> arg0, View arg1,
-							int arg2, long arg3) {
-						startActivity(new Intent(getApplicationContext(),
-								BranchDetailsActivity.class));
+							int pos, long arg3) {
+						Intent i = new Intent(getApplicationContext(),
+								BranchDetailsActivity.class);
+						i.putExtra("pos", pos);
+						startActivity(i);
+						// startActivity(new Intent(getApplicationContext(),
+						// BranchDetailsActivity.class));
 
 					}
 				});
@@ -78,7 +82,7 @@ public class SurahActivity extends ParentActivity {
 	@Override
 	public void onClick(View v) {
 		if (v == mindmapBtn) {
-//			
+			//
 			startActivity(new Intent(getApplicationContext(),
 					MindMapActivity.class));
 		} else if (v == virtueBtn) {

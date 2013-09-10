@@ -277,7 +277,15 @@ containing a value of this type.
         public static final int surah=0x7f0b0005;
     }
     public static final class raw {
-        public static final int su18=0x7f050000;
+        public static final int kahf1=0x7f050000;
+        public static final int kahf2=0x7f050001;
+        public static final int kahf3=0x7f050002;
+        public static final int kahf4=0x7f050003;
+        public static final int kahf5=0x7f050004;
+        public static final int kahf6=0x7f050005;
+        public static final int kahf7=0x7f050006;
+        public static final int kahf8=0x7f050007;
+        public static final int su18=0x7f050008;
     }
     public static final class string {
         public static final int about=0x7f080005;

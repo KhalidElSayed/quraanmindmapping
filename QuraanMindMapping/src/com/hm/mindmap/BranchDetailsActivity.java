@@ -21,6 +21,7 @@ public class BranchDetailsActivity extends Activity implements
 	private HoloCircleSeekBar songProgressBar;
 	private Handler mHandler = new Handler();
 	public static Context CONTEXT;
+	int position;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class BranchDetailsActivity extends Activity implements
 		songProgressBar.setOnSeekBarChangeListener(this);
 		btnPlay = (ImageButton) findViewById(R.id.btnPlay);
 		CONTEXT = this;
+		position = getIntent().getExtras().getInt("pos");
 		btnPlay.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -52,7 +54,36 @@ public class BranchDetailsActivity extends Activity implements
 
 			}
 		});
-		mp = MediaPlayer.create(this, R.raw.su18);
+		switch (position) {
+		case 0:
+			mp = MediaPlayer.create(this, R.raw.kahf1);
+			break;
+		case 1:
+			mp = MediaPlayer.create(this, R.raw.kahf2);
+			break;
+		case 2:
+			mp = MediaPlayer.create(this, R.raw.kahf3);
+			break;
+		case 3:
+			mp = MediaPlayer.create(this, R.raw.kahf4);
+			break;
+		case 4:
+			mp = MediaPlayer.create(this, R.raw.kahf5);
+			break;
+		case 5:
+			mp = MediaPlayer.create(this, R.raw.kahf6);
+			break;
+		case 6:
+			mp = MediaPlayer.create(this, R.raw.kahf7);
+			break;
+		case 7:
+			mp = MediaPlayer.create(this, R.raw.kahf8);
+			break;
+		default:
+			break;
+		}
+
+		// mp = MediaPlayer.create(this, R.raw.su18);
 		mp.setLooping(true); // Set looping
 		mp.setOnCompletionListener(this);
 		initWebView();

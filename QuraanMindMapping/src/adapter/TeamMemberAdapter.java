@@ -21,6 +21,8 @@ public class TeamMemberAdapter extends BaseAdapter {
 	private Activity activity;
 	private ArrayList<TeamMembers> data;
 	private static LayoutInflater inflater = null;
+	int images[] = { R.drawable.elham, R.drawable.hala,
+			R.drawable.awady, R.drawable.hemdan, R.drawable.sherif };
 
 	public TeamMemberAdapter(Activity a, ArrayList<TeamMembers> d) {
 		activity = a;
@@ -54,18 +56,19 @@ public class TeamMemberAdapter extends BaseAdapter {
 			holder = new ViewHolder();
 
 			convertView.setTag(holder);
-
+			holder.img = (ImageView) convertView.findViewById(R.id.img);
 			holder.nameEt = (TextView) convertView.findViewById(R.id.nameEt);
 			holder.positionEt = (TextView) convertView
 					.findViewById(R.id.positionEt);
 			holder.email = (ImageView) convertView.findViewById(R.id.email);
 			holder.twitter = (ImageView) convertView.findViewById(R.id.twitter);
-			holder.facebook = (ImageView) convertView.findViewById(R.id.facebook);
+			holder.facebook = (ImageView) convertView
+					.findViewById(R.id.facebook);
 			holder.positionEt = (TextView) convertView
 					.findViewById(R.id.positionEt);
 		}
 		holder = (ViewHolder) convertView.getTag();
-
+		holder.img.setImageResource(TeamMembers.photo);
 		holder.nameEt.setText(TeamMembers.name);
 		holder.positionEt.setText(TeamMembers.position);
 
@@ -112,7 +115,7 @@ public class TeamMemberAdapter extends BaseAdapter {
 			TeamMembers.facebook = fb[i];
 			TeamMembers.email = mail[i];
 			TeamMembers.twitter = linked[i];
-
+			TeamMembers.photo = images[i];
 			// SurahParts.nameOfPart = part_name[i];
 
 			data.add(TeamMembers);

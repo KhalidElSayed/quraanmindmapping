@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
     <issue id="JavascriptInterface">
-        <ignore path="src/com/hm/mindmap/AdvancedWebView.java" />
         <ignore path="src/com/hm/mindmap/BranchDetailsActivity.java" />
     </issue>
 </lint>

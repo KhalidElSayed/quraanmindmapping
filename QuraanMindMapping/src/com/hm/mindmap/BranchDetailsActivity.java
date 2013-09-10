@@ -95,7 +95,11 @@ public class BranchDetailsActivity extends Activity implements
 		webView.getSettings().setJavaScriptEnabled(true);
 
 		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
+
 		webView.loadUrl("file:///android_asset/html/sample_1_8.html");
+
+		webView.setBackgroundColor(0x00000000);
+
 	}
 
 	@Override
@@ -167,6 +171,8 @@ public class BranchDetailsActivity extends Activity implements
 		super.onDestroy();
 		if (mp != null)
 			mp.release();
+		mHandler.removeCallbacks(mUpdateTimeTask);
+
 	}
 
 	@Override

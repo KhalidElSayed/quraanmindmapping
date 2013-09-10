@@ -3,6 +3,7 @@ package com.hm.mindmap;
 import java.util.ArrayList;
 
 import objects.SurahParts;
+import utitles.Utilities;
 import adapter.SurahDetailsAdapter;
 import android.content.Intent;
 import android.os.Bundle;
@@ -59,6 +60,8 @@ public class SurahActivity extends ParentActivity {
 		circleImg.setImageResource(parts[totalparts]);
 
 		percTxt.setText(getPercetage());
+		
+		Utilities.generateRandomMotiviation(this);
 	}
 
 	private void findViews() {

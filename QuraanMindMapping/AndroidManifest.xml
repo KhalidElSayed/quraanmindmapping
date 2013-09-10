@@ -16,12 +16,9 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.hm.mindmap.BranchDetailsActivity"
-            android:label="Branch Details" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:configChanges="orientation"
+            android:label="Branch Details"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.hm.mindmap.SplashActivity"
@@ -31,27 +28,48 @@
         </activity>
         <activity
             android:name="com.hm.mindmap.SurahActivity"
-            android:label="@string/title_activity_surah" >
+            android:configChanges="orientation"
+            android:label="@string/title_activity_surah"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.hm.mindmap.Intro" >
+        <activity
+            android:name="com.hm.mindmap.Intro"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.hm.mindmap.AboutAppActivity"
-            android:label="@string/title_activity_about_app" >
+            android:configChanges="orientation"
+            android:label="@string/title_activity_about_app"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.hm.mindmap.AboutTeamActivity"
-            android:label="@string/title_activity_about_team" >
+            android:configChanges="orientation"
+            android:label="@string/title_activity_about_team"
+            android:screenOrientation="portrait" >
         </activity>
         <activity android:name="com.hm.mindmap.AdvancedWebView" >
         </activity>
         <activity
             android:name="com.hm.mindmap.HowToUseActivity"
-            android:label="@string/title_activity_how_to_use" >
+            android:configChanges="orientation"
+            android:label="@string/title_activity_how_to_use"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.hm.mindmap.MindMapActivity"
             android:label="@string/title_activity_mind_map" >
+        </activity>
+        <activity
+            android:name="PopupActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

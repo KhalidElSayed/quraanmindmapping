@@ -388,7 +388,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:color
+          @attr name com.hm.mindmap:color
         */
         public static final int HoloCircleSeekBar_color = 8;
         /**
@@ -402,7 +402,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:end_angle
+          @attr name com.hm.mindmap:end_angle
         */
         public static final int HoloCircleSeekBar_end_angle = 5;
         /**
@@ -416,7 +416,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:init_position
+          @attr name com.hm.mindmap:init_position
         */
         public static final int HoloCircleSeekBar_init_position = 7;
         /**
@@ -430,7 +430,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:max
+          @attr name com.hm.mindmap:max
         */
         public static final int HoloCircleSeekBar_max = 2;
         /**
@@ -444,7 +444,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:pointer_color
+          @attr name com.hm.mindmap:pointer_color
         */
         public static final int HoloCircleSeekBar_pointer_color = 11;
         /**
@@ -458,7 +458,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:pointer_halo_color
+          @attr name com.hm.mindmap:pointer_halo_color
         */
         public static final int HoloCircleSeekBar_pointer_halo_color = 12;
         /**
@@ -472,7 +472,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:pointer_size
+          @attr name com.hm.mindmap:pointer_size
         */
         public static final int HoloCircleSeekBar_pointer_size = 1;
         /**
@@ -486,7 +486,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:show_text
+          @attr name com.hm.mindmap:show_text
         */
         public static final int HoloCircleSeekBar_show_text = 3;
         /**
@@ -500,7 +500,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:start_angle
+          @attr name com.hm.mindmap:start_angle
         */
         public static final int HoloCircleSeekBar_start_angle = 4;
         /**
@@ -514,7 +514,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:text_color
+          @attr name com.hm.mindmap:text_color
         */
         public static final int HoloCircleSeekBar_text_color = 13;
         /**
@@ -528,7 +528,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:text_size
+          @attr name com.hm.mindmap:text_size
         */
         public static final int HoloCircleSeekBar_text_size = 6;
         /**
@@ -542,7 +542,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:wheel_active_color
+          @attr name com.hm.mindmap:wheel_active_color
         */
         public static final int HoloCircleSeekBar_wheel_active_color = 9;
         /**
@@ -556,7 +556,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:wheel_size
+          @attr name com.hm.mindmap:wheel_size
         */
         public static final int HoloCircleSeekBar_wheel_size = 0;
         /**
@@ -570,7 +570,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:wheel_unactive_color
+          @attr name com.hm.mindmap:wheel_unactive_color
         */
         public static final int HoloCircleSeekBar_wheel_unactive_color = 10;
     };

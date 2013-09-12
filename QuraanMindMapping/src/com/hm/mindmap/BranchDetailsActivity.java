@@ -22,6 +22,7 @@ public class BranchDetailsActivity extends Activity implements
 	private Handler mHandler = new Handler();
 	public static Context CONTEXT;
 	int position;
+	WebView webView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class BranchDetailsActivity extends Activity implements
 		btnPlay = (ImageButton) findViewById(R.id.btnPlay);
 		CONTEXT = this;
 		position = getIntent().getExtras().getInt("pos");
+		webView = (WebView) findViewById(R.id.webview);
 		btnPlay.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -57,27 +59,35 @@ public class BranchDetailsActivity extends Activity implements
 		switch (position) {
 		case 0:
 			mp = MediaPlayer.create(this, R.raw.kahf1);
+			webView.loadUrl("file:///android_asset/html/sample_1_8.html");
 			break;
 		case 1:
 			mp = MediaPlayer.create(this, R.raw.kahf2);
+			webView.loadUrl("file:///android_asset/html/sample_9_26.html");
 			break;
 		case 2:
 			mp = MediaPlayer.create(this, R.raw.kahf3);
+			webView.loadUrl("file:///android_asset/html/sample_27_31.html");
 			break;
 		case 3:
 			mp = MediaPlayer.create(this, R.raw.kahf4);
+			webView.loadUrl("file:///android_asset/html/sample_32_46.html");
 			break;
 		case 4:
 			mp = MediaPlayer.create(this, R.raw.kahf5);
+			webView.loadUrl("file:///android_asset/html/sample_47_59.html");
 			break;
 		case 5:
 			mp = MediaPlayer.create(this, R.raw.kahf6);
+			webView.loadUrl("file:///android_asset/html/sample_60_82.html");
 			break;
 		case 6:
 			mp = MediaPlayer.create(this, R.raw.kahf7);
+			webView.loadUrl("file:///android_asset/html/sample_83_98.html");
 			break;
 		case 7:
 			mp = MediaPlayer.create(this, R.raw.kahf8);
+			webView.loadUrl("file:///android_asset/html/sample_99_110.html");
 			break;
 		default:
 			break;
@@ -90,13 +100,13 @@ public class BranchDetailsActivity extends Activity implements
 	}
 
 	private void initWebView() {
-		WebView webView = (WebView) findViewById(R.id.webview);
+		// WebView webView = (WebView) findViewById(R.id.webview);
 		webView.getSettings().setSupportZoom(true);
 		webView.getSettings().setJavaScriptEnabled(true);
 
-		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
+		// webView.addJavascriptInterface(new JSInterface(), "jsinterface");
 
-		webView.loadUrl("file:///android_asset/html/sample_9_26.html");
+		// webView.loadUrl("file:///android_asset/html/sample_9_26.html");
 
 		webView.setBackgroundColor(0x00000000);
 

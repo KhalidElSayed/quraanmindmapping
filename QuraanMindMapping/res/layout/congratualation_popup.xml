@@ -67,13 +67,15 @@
             android:layout_alignEnd="@+id/imageView1"
             android:layout_alignParentTop="true"
             android:src="@drawable/x" /> -->
+
             <ImageView
-            android:id="@+id/xButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/imageView1"
-      		android:layout_alignTop="@+id/imageView1"
-            android:src="@drawable/x" />
+                android:id="@+id/xButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            
+                android:layout_alignTop="@+id/imageView1"
+                android:src="@drawable/x" />
+
     </RelativeLayout>
 
 </RelativeLayout>

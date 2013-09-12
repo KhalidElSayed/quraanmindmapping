@@ -96,7 +96,7 @@ public class BranchDetailsActivity extends Activity implements
 
 		webView.addJavascriptInterface(new JSInterface(), "jsinterface");
 
-		webView.loadUrl("file:///android_asset/html/sample_1_8.html");
+		webView.loadUrl("file:///android_asset/html/sample_9_26.html");
 
 		webView.setBackgroundColor(0x00000000);
 

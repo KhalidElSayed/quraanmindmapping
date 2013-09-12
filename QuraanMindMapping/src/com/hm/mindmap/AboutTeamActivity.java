@@ -11,7 +11,7 @@ public class AboutTeamActivity extends ParentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		
+		       
 		setContentView(R.layout.activity_about_team);
 		super.onCreate(savedInstanceState);
 		ListView lv=(ListView) findViewById(R.id.listView1);

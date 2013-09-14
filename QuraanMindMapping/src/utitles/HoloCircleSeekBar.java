@@ -32,7 +32,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.hm.mindmap.R;
+import com.uxlyapps.quaranmindmap.R;
+
 
 /**
  * Displays a holo-themed color picker.

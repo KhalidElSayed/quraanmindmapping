@@ -11,8 +11,8 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.hm.mindmap.R;
 import com.hm.mindmap.SurahActivity;
+import com.uxlyapps.quaranmindmap.R;
 
 public class SurahDetailsAdapter extends BaseAdapter {
 
@@ -44,9 +44,9 @@ public class SurahDetailsAdapter extends BaseAdapter {
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 
-		final SurahParts surahParts= data.get(position);
+		final SurahParts surahParts = data.get(position);
 		ViewHolder holder = null;
-		
+
 		if (convertView == null) {
 			convertView = inflater.inflate(R.layout.row_surah_parts, null);
 			holder = new ViewHolder();
@@ -58,7 +58,7 @@ public class SurahDetailsAdapter extends BaseAdapter {
 			holder.to_txt = (TextView) convertView.findViewById(R.id.to_txt);
 			holder.from_txt = (TextView) convertView
 					.findViewById(R.id.from_txt);
-			
+
 		}
 		holder = (ViewHolder) convertView.getTag();
 		holder.done_ch.setButtonDrawable(surahParts.level);

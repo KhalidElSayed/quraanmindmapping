@@ -11,7 +11,7 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.hm.mindmap.R;
+import com.uxlyapps.quaranmindmap.R;
 
 public class PopUpDialog {
 	Activity activity;

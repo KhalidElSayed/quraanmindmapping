@@ -15,6 +15,7 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher.ViewFactory;
 import business.Registration;
+import com.uxlyapps.quaranmindmap.R;
 
 public class Intro extends ParentActivity implements ViewFactory,
 		OnClickListener {
@@ -91,10 +92,11 @@ public class Intro extends ParentActivity implements ViewFactory,
 						// GalleryActivity.this.setTitle(curIndex);
 					} else if (downX - upX > -100) {
 						if (current != 1) {
-						iSwitcher.setImageResource(pics[1]);
-						bullets_img.setImageResource(R.drawable.b2_selected);
-						startBTN.setVisibility(View.VISIBLE);
-						current=1;
+							iSwitcher.setImageResource(pics[1]);
+							bullets_img
+									.setImageResource(R.drawable.b2_selected);
+							startBTN.setVisibility(View.VISIBLE);
+							current = 1;
 						}
 						// current++;
 						// if (current < 2) {

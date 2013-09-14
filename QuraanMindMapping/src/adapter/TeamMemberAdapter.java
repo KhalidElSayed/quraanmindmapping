@@ -14,15 +14,15 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.hm.mindmap.R;
+import com.uxlyapps.quaranmindmap.R;
 
 public class TeamMemberAdapter extends BaseAdapter {
 
 	private Activity activity;
 	private ArrayList<TeamMembers> data;
 	private static LayoutInflater inflater = null;
-	int images[] = { R.drawable.elham, R.drawable.hala,
-			R.drawable.awady, R.drawable.hemdan, R.drawable.sherif };
+	int images[] = { R.drawable.elham, R.drawable.hala, R.drawable.awady,
+			R.drawable.hemdan, R.drawable.sherif };
 
 	public TeamMemberAdapter(Activity a, ArrayList<TeamMembers> d) {
 		activity = a;

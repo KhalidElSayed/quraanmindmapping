@@ -5,17 +5,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import com.uxlyapps.quaranmindmap.R;
 
 public class ParentActivity extends Activity implements OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-	//	Language.setCurrentLocal(getApplicationContext());
+		// Language.setCurrentLocal(getApplicationContext());
 		ImageButton back = (ImageButton) findViewById(R.id.back_btn);
 		if (back != null)
 			back.setOnClickListener(this);
-		
+
 	}
 
 	@Override

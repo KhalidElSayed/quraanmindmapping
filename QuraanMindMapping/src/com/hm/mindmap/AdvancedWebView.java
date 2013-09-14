@@ -1,10 +1,13 @@
 package com.hm.mindmap;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.webkit.WebView;
+import com.uxlyapps.quaranmindmap.R;
 
+@SuppressLint("JavascriptInterface")
 public class AdvancedWebView extends Activity {
 
 	public static Context CONTEXT;

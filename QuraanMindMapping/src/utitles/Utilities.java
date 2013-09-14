@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.hm.mindmap.PopupActivity;
-import com.hm.mindmap.R;
+import com.uxlyapps.quaranmindmap.R;
 
 public class Utilities {
 	public static void generateRandomMotiviation(Context mContext) {

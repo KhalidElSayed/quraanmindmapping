@@ -1,7 +1,6 @@
 package objects;
 
-import com.hm.mindmap.R;
-
+import com.uxlyapps.quaranmindmap.R;
 public class TeamMembers {
 	public String name = null;
 	public String position = null;

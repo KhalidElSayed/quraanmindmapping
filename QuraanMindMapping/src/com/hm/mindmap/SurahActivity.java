@@ -15,6 +15,7 @@ import android.widget.ListView;
 import c.CTextView;
 import c.PopUpDialog;
 import data.StoreData;
+import com.uxlyapps.quaranmindmap.R;
 
 public class SurahActivity extends ParentActivity {
 	private ImageView circleImg;
@@ -60,7 +61,7 @@ public class SurahActivity extends ParentActivity {
 		circleImg.setImageResource(parts[totalparts]);
 
 		percTxt.setText(getPercetage());
-		
+
 		Utilities.generateRandomMotiviation(this);
 	}
 

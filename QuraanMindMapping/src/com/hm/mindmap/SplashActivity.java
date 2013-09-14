@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import business.Registration;
+import com.uxlyapps.quaranmindmap.R;
 
 public class SplashActivity extends Activity {
 	protected boolean _active = true;

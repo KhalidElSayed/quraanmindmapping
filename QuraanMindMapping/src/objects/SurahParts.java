@@ -1,7 +1,6 @@
 package objects;
 
-import com.hm.mindmap.R;
-
+import com.uxlyapps.quaranmindmap.R;
 public class SurahParts {
 public String fromAyah="0";
 public String toAyah="10";

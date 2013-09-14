@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageButton;
+import com.uxlyapps.quaranmindmap.R;
 
 public class BranchDetailsActivity extends Activity implements
 		OnCompletionListener, OnCircleSeekBarChangeListener {
